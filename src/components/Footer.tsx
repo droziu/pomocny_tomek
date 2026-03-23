@@ -4,7 +4,7 @@ import CookieSettingsTrigger from "@/components/CookieSettingsTrigger";
 
 export default function Footer() {
   return (
-    <footer className="bg-forest-dark text-white">
+    <footer className="bg-forest-dark text-white pb-20 md:pb-0">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         {/* Główna zawartość */}
         <div className="py-12 md:py-16">
