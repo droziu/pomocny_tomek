@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-forest: #2D5A3D;
+  --color-forest-dark: #1E3F2B;
+  --color-forest-light: #3A7A52;
+  --color-sage: #7A9E7E;
+  --color-sage-light: #A8C5AB;
+  --color-cream: #FAF7F2;
+  --color-cream-dark: #F0EBE1;
+  --color-wood: #8B6914;
+  --color-wood-light: #C4A35A;
+  --color-wood-dark: #6B4F10;
+  --color-cta: #E8872A;
+  --color-cta-hover: #D47520;
+  --color-cta-light: #FFF3E8;
+  --color-warm-gray: #6B6560;
+  --color-warm-gray-light: #9E9893;
+  --color-text: #2C2926;
+  --color-text-light: #5C5550;
+  --color-white: #FFFFFF;
+  --color-overlay: rgba(30, 63, 43, 0.7);
+
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  -webkit-tap-highlight-color: transparent;
+  background: var(--color-cream);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background-color: var(--color-sage-light);
+  color: var(--color-forest-dark);
+}
+
+/* Focus visible – dostępność dla nawigacji klawiaturą */
+:focus-visible {
+  outline: 2px solid var(--color-forest);
+  outline-offset: 2px;
+}
+
+/* Sticky bottom bar spacing */
+main {
+  padding-bottom: 5rem;
+  overflow: visible;
+}
+
+@media (min-width: 768px) {
+  main {
+    padding-bottom: 0;
+  }
+}
