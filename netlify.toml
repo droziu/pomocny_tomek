@@ -1,0 +1,10 @@
+# Konfiguracja budowania i publikacji na Netlify
+# https://docs.netlify.com/build/configure-builds/file-based-configuration/
+
+[build]
+  command = "npm run build"
+  publish = "out"
+
+# Jeśli projekt jest w podfolderze repozytorium (np. monorepo),
+# ustaw base w Netlify UI: Build & deploy → Base directory
+# np. "pomocny_tomek" lub ścieżka do tego folderu
