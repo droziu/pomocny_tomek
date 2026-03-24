@@ -11,11 +11,14 @@ export default function CookieSettingsTrigger({
 }) {
   const handleClick = (e: React.MouseEvent) => {
     e.preventDefault();
-    if (typeof window !== "undefined") {
+    if (typeof window === "undefined") return;
+    try {
       localStorage.setItem(SETTINGS_REQUEST_KEY, "true");
-      window.dispatchEvent(new CustomEvent("showCookieBanner"));
-      window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
+    } catch {
+      /* localStorage może rzucać w incognito / Android */
     }
+    window.dispatchEvent(new CustomEvent("showCookieBanner"));
+    window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
   };
 
   return (

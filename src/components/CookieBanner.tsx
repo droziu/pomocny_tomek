@@ -28,13 +28,21 @@ function getStoredConsent(): Consent | null {
 
 function storeConsent(consent: Consent) {
   if (typeof window === "undefined") return;
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(consent));
-  window.dispatchEvent(new CustomEvent("cookieConsentChanged", { detail: consent }));
+  try {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(consent));
+    window.dispatchEvent(new CustomEvent("cookieConsentChanged", { detail: consent }));
+  } catch {
+    /* localStorage może rzucać w trybie incognito / Android low-memory */
+  }
 }
 
 function clearSettingsRequest() {
   if (typeof window === "undefined") return;
-  localStorage.removeItem(SETTINGS_REQUEST_KEY);
+  try {
+    localStorage.removeItem(SETTINGS_REQUEST_KEY);
+  } catch {
+    /* localStorage może rzucać w trybie incognito / Android */
+  }
 }
 
 export default function CookieBanner() {
@@ -44,8 +52,14 @@ export default function CookieBanner() {
   const [marketing, setMarketing] = useState(false);
 
   useEffect(() => {
+    let settingsRequested = false;
+    try {
+      settingsRequested =
+        typeof window !== "undefined" && localStorage.getItem(SETTINGS_REQUEST_KEY) === "true";
+    } catch {
+      /* localStorage może rzucać (incognito, Android) */
+    }
     const consent = getStoredConsent();
-    const settingsRequested = typeof window !== "undefined" && localStorage.getItem(SETTINGS_REQUEST_KEY) === "true";
 
     if (!consent || settingsRequested) {
       setVisible(true);

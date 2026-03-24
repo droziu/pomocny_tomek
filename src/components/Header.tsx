@@ -48,9 +48,21 @@ export default function Header() {
   }, []);
 
   useEffect(() => {
-    document.body.style.overflow = mobileOpen ? "hidden" : "";
+    try {
+      if (typeof document !== "undefined" && document.body) {
+        document.body.style.overflow = mobileOpen ? "hidden" : "";
+      }
+    } catch {
+      /* document.body może być niedostępny w niektórych edge cases */
+    }
     return () => {
-      document.body.style.overflow = "";
+      try {
+        if (typeof document !== "undefined" && document.body) {
+          document.body.style.overflow = "";
+        }
+      } catch {
+        /* ignore */
+      }
     };
   }, [mobileOpen]);
 
