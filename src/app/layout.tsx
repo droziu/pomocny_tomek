@@ -48,8 +48,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pl">
-      <body className={`${inter.variable} font-sans antialiased`}>
+    <html lang="pl" suppressHydrationWarning>
+      <body className={`${inter.variable} font-sans antialiased`} suppressHydrationWarning>
         <a
           href="#main-content"
           className="fixed left-4 top-4 z-[100] -translate-y-[200%] px-4 py-3 bg-forest text-white rounded-xl font-medium shadow-lg transition-transform duration-200 focus:translate-y-0 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-forest"

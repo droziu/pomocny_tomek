@@ -46,12 +46,19 @@ function clearSettingsRequest() {
 }
 
 export default function CookieBanner() {
+  const [mounted, setMounted] = useState(false);
   const [visible, setVisible] = useState(false);
   const [showSettings, setShowSettings] = useState(false);
   const [analytical, setAnalytical] = useState(false);
   const [marketing, setMarketing] = useState(false);
 
   useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  useEffect(() => {
+    if (!mounted) return;
+
     let settingsRequested = false;
     try {
       settingsRequested =
@@ -83,7 +90,7 @@ export default function CookieBanner() {
 
     window.addEventListener("showCookieBanner", handleShow);
     return () => window.removeEventListener("showCookieBanner", handleShow);
-  }, []);
+  }, [mounted]);
 
   const savePreferences = (essential: boolean, anal: boolean, mark: boolean) => {
     storeConsent({
@@ -108,7 +115,7 @@ export default function CookieBanner() {
     savePreferences(true, analytical, marketing);
   };
 
-  if (!visible) return null;
+  if (!mounted || !visible) return null;
 
   return (
     <div

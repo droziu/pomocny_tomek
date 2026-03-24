@@ -64,7 +64,7 @@ export default function Footer() {
 
         {/* Dolny pasek */}
         <div className="py-4 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-white/40">
-          <p>&copy; {new Date().getFullYear()} Pomocny Tomek</p>
+          <p suppressHydrationWarning>&copy; {new Date().getFullYear()} Pomocny Tomek</p>
           <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-1">
             <Link href="/polityka-prywatnosci" className="hover:text-white/60 transition-colors">
               Polityka prywatności i plików cookies
