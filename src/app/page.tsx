@@ -1,75 +1,92 @@
+import type { Metadata } from "next";
 import Image from "next/image";
-import { Axe, Leaf, Tractor, TreeDeciduous, Wrench, Wallet, MapPin, Users, Truck, CheckCircle2 } from "lucide-react";
+import {
+  Axe,
+  Leaf,
+  Tractor,
+  TreeDeciduous,
+  Wrench,
+  Wallet,
+  MapPin,
+  Users,
+  Truck,
+  CheckCircle2,
+  Trees,
+  Drill,
+  Scissors,
+} from "lucide-react";
 import CTAButton from "@/components/CTAButton";
 import ServiceCard from "@/components/ServiceCard";
 import PostalCodeChecker from "@/components/PostalCodeChecker";
+import { pageMetadata } from "@/lib/seo";
+
+export const metadata: Metadata = pageMetadata("/", {
+  absoluteTitle: true,
+  title:
+    "Pomocny Tomek — rąbanie drewna, oczyszczanie działek i prace w terenie | Jastrzębie-Zdrój, Cieszyn",
+  description:
+    "Pomocny Tomek: rąbanie i łupanie drewna na opał, rozdrabnianie gałęzi rębakiem, oczyszczanie działek i terenu, glebogryzarka, frezowanie pni, wiercenie w ziemi, przycinka drzew. Jastrzębie-Zdrój, Cieszyn i okolice. Tel. 517 363 915.",
+});
 
 export default function Home() {
   return (
     <>
-      {/* HERO – klasyczny dwukolumnowy, zdjęcie nachodzi na sekcję poniżej, głowa wychodzi w górę */}
-      <section className="relative z-20 bg-forest-dark overflow-visible">
-        <div className="absolute inset-0 opacity-[0.06]" aria-hidden>
+      {/* HERO – czysty, „premium local business”: typografia + wąska karta z portretem w kole i logo */}
+      <section className="relative z-20 overflow-visible bg-forest-dark">
+        <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-black/[0.12] via-transparent to-black/[0.18]" aria-hidden />
+        <div className="pointer-events-none absolute inset-0 opacity-[0.05]" aria-hidden>
           <div
             className="absolute inset-0"
             style={{
               backgroundImage:
-                "radial-gradient(circle at 70% 30%, rgba(255,255,255,0.15) 0%, transparent 50%)",
+                "radial-gradient(ellipse 80% 50% at 75% 20%, rgba(255,255,255,0.2) 0%, transparent 55%)",
             }}
           />
         </div>
 
-        <div className="relative overflow-visible mx-auto max-w-6xl px-4 sm:px-6 pt-24 pb-0 md:pt-28 lg:pb-20">
-          <div className="grid overflow-visible lg:grid-cols-2 gap-4 lg:gap-12 items-center">
-            {/* Tekst – lewa kolumna */}
+        <div className="relative mx-auto max-w-6xl overflow-visible px-4 sm:px-6 pb-12 pt-24 md:pb-16 md:pt-28 lg:pb-20 lg:pt-32">
+          <div className="mx-auto grid max-w-5xl items-center gap-12 lg:mx-0 lg:max-w-none lg:grid-cols-[minmax(0,1.15fr)_minmax(0,0.85fr)] lg:gap-16 xl:gap-20">
             <div className="text-center lg:text-left">
-              <p className="text-white/70 text-sm mb-4">
+              <p className="mb-5 inline-flex items-center rounded-full border border-white/15 bg-white/[0.06] px-4 py-1.5 text-xs font-medium tracking-wide text-white/75">
                 Jastrzębie-Zdrój, Cieszyn i okolice
               </p>
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-[1.12] tracking-tight mb-6">
-                Pomocny Tomek, fachowa pomoc przy drewnie i na działce
+              <h1 className="text-balance text-3xl font-extrabold leading-[1.1] tracking-tight text-white sm:text-4xl md:text-5xl lg:text-[2.75rem] xl:text-6xl">
+                <span className="block sm:whitespace-nowrap">Pomocny Tomek</span>
+                <span className="mt-2 block text-[0.92em] font-bold text-white/95 md:mt-3">
+                  fachowa pomoc przy drewnie i na działce
+                </span>
               </h1>
-              <p className="text-lg md:text-xl text-white/80 leading-relaxed max-w-2xl mx-auto lg:mx-0 mb-10">
-                Rąbanie drewna, rozdrabnianie gałęzi, koszenie trawy i porządki na działce. Przyjeżdżam, robię co trzeba i uczciwie się rozliczamy. Jak jest robota, z którą samemu ciężko ruszyć, po prostu zadzwoń.
+              <p className="mx-auto mt-6 max-w-xl text-pretty text-base leading-relaxed text-white/75 md:text-lg lg:mx-0 lg:max-w-lg">
+                Rąbanie drewna, rozdrabnianie gałęzi, oczyszczanie działek i inne prace w terenie. Przyjeżdżam, robię co trzeba i uczciwie się rozliczamy. Jak jest robota, z którą samemu ciężko ruszyć, po prostu zadzwoń.
               </p>
-              <div className="flex justify-center lg:justify-start">
+              <div className="mt-9 flex justify-center lg:justify-start">
                 <CTAButton large />
               </div>
             </div>
 
-            {/* Zdjęcie – mobile: pełna szerokość, bez kontenera; desktop: kontener z efektem 3D */}
-            <div className="relative overflow-visible">
-              {/* Mobile – proste zdjęcie na pełną szerokość, flush z dołem hero */}
-              <div className="lg:hidden -mx-4 sm:-mx-6 -mb-1">
-                <Image
-                  src="/Pomocny%20Tomek%20HERO.webp"
-                  alt="Pomocny Tomek"
-                  width={800}
-                  height={600}
-                  className="w-full h-auto"
-                  sizes="100vw"
-                  priority
-                />
-              </div>
-
-              {/* Desktop – kontener z efektem 3D */}
-              <div className="hidden lg:flex overflow-visible justify-end">
-                <div className="relative overflow-visible w-full max-w-[440px]">
+            <div className="flex justify-center lg:justify-end">
+              <div className="flex w-full max-w-[300px] flex-col items-stretch rounded-[1.75rem] border border-white/10 bg-white/[0.04] p-8 shadow-[0_24px_48px_-12px_rgba(0,0,0,0.35)] backdrop-blur-sm sm:max-w-[320px] sm:p-9">
+                <div className="relative mx-auto flex aspect-square w-[200px] shrink-0 items-center justify-center sm:w-[220px]">
                   <div
-                    className="absolute inset-x-0 top-0 h-20 pointer-events-none z-20"
-                    style={{
-                      background: "linear-gradient(to bottom, #1e3f2b 20%, transparent 100%)",
-                    }}
+                    className="pointer-events-none absolute inset-[8%] rounded-full bg-cta/12 blur-2xl"
                     aria-hidden
                   />
                   <Image
                     src="/Pomocny%20Tomek%20HERO.webp"
-                    alt="Pomocny Tomek"
-                    width={440}
-                    height={660}
-                    className="relative z-10 w-full h-auto rounded-b-3xl shadow-2xl"
-                    sizes="45vw"
+                    alt="Pomocny Tomek — zdjęcie profilowe przy pracy terenowej"
+                    width={220}
+                    height={220}
+                    className="relative z-10 h-[200px] w-[200px] rounded-full object-cover object-[center_22%] shadow-[0_12px_40px_rgba(0,0,0,0.35)] ring-[1.5px] ring-white/25 sm:h-[220px] sm:w-[220px]"
+                    sizes="(max-width: 640px) 200px, 220px"
                     priority
+                  />
+                </div>
+                <div className="mt-8 flex flex-col items-center border-t border-white/10 pt-8">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src="/Logo_1_2d2.png"
+                    alt="Pomocny Tomek — logo"
+                    className="h-[4.25rem] w-auto max-w-[240px] object-contain opacity-95 brightness-0 invert sm:h-[4.75rem]"
                   />
                 </div>
               </div>
@@ -136,8 +153,8 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             <div className="group relative aspect-[4/3] rounded-2xl overflow-hidden">
               <Image
-                src="/tomek_1.jpeg"
-                alt="Pomocny Tomek"
+                src="/tomek_1.webp"
+                alt="Pomocny Tomek przy pracy z drewnem i działką"
                 fill
                 className="object-cover object-[center_35%] transition-transform duration-500 ease-out group-hover:scale-105"
                 sizes="(max-width: 1024px) 100vw, 50vw"
@@ -182,7 +199,7 @@ export default function Home() {
             Kliknij i sprawdź, czym się zajmuję.
           </p>
 
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-2">
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             <ServiceCard
               href="/uslugi/drewno"
               icon={Axe}
@@ -198,14 +215,32 @@ export default function Home() {
             <ServiceCard
               href="/uslugi/sprzatanie"
               icon={Leaf}
-              title="Koszenie i sprzątanie"
-              description="Koszenie trawy, porządki i ogarnianie zaniedbanych działek. Zrobię porządek tam, gdzie samemu ciężko się za to zabrać."
+              title="Oczyszczanie działek i terenu"
+              description="Usuwanie krzaków, samosiejek i wycinka krzewów. Porządek na działce własnym sprzętem i bez zbędnego komplikowania."
             />
             <ServiceCard
               href="/uslugi/glebogryzarka"
               icon={Tractor}
               title="Spulchnianie ziemi"
               description="Spulchnię ziemię pod trawnik, ogród albo warzywniak. Szybciej i wygodniej niż ręcznie."
+            />
+            <ServiceCard
+              href="/uslugi/frezowanie-pni"
+              icon={Trees}
+              title="Frezowanie pni"
+              description="Usuwanie pni po wycince. Wycena indywidualna – zależy od pnia i warunków na miejscu."
+            />
+            <ServiceCard
+              href="/uslugi/wiercenie-otworow"
+              icon={Drill}
+              title="Wiercenie otworów w ziemi"
+              description="Wiercenie otworów pod ogrodzenia, drzewka i inne prace w ziemi. Szybko, wygodnie i własnym sprzętem."
+            />
+            <ServiceCard
+              href="/uslugi/przycinka-drzew"
+              icon={Scissors}
+              title="Przycinka drzew"
+              description="Przycinka mniejszych drzew i drzew owocowych oraz pomoc przy prostszych pracach związanych ze ścinką."
             />
           </div>
         </div>

@@ -2,12 +2,13 @@ import type { Metadata } from "next";
 import { Phone, Mail, MapPin } from "lucide-react";
 import PostalCodeChecker from "@/components/PostalCodeChecker";
 import CitySearchSection from "@/components/CitySearchSection";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Kontakt – Pomocny Tomek",
+export const metadata: Metadata = pageMetadata("/kontakt", {
+  title: "Kontakt i obszar działania",
   description:
-    "Skontaktuj się: 517 363 915. E-mail: pomocnytom@gmail.com. Jastrzębie-Zdrój, Cieszyn i okolice.",
-};
+    "Kontakt do Pomocnego Tomka: 517 363 915, zapasowy 503 176 915, e-mail pomocnytom@gmail.com. Obsługa Jastrzębia-Zdroju, Cieszyna i okolic.",
+});
 
 export default function KontaktPage() {
   return (
@@ -69,6 +70,20 @@ export default function KontaktPage() {
               <div>
                 <p className="text-sm text-text-light mb-0.5">Telefon</p>
                 <p className="text-xl font-bold text-text">517 363 915</p>
+              </div>
+            </a>
+            <a
+              href="tel:+48503176915"
+              className="flex items-center gap-4 rounded-2xl border border-cream-dark/50 bg-white p-6 transition-colors hover:border-forest/20 group"
+            >
+              <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-cream-dark/70 text-text">
+                <Phone className="h-5 w-5" />
+              </span>
+              <div>
+                <p className="text-sm text-text-light mb-2 leading-relaxed">
+                  Jeśli nie odbieram telefonu - możesz spróbować zadzwonić tutaj
+                </p>
+                <p className="text-xl font-bold text-text">503 176 915</p>
               </div>
             </a>
             <a

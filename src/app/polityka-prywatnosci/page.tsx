@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import CookieSettingsLink from "@/components/CookieSettingsLink";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Polityka prywatności i plików cookies – Pomocny Tomek",
+export const metadata: Metadata = pageMetadata("/polityka-prywatnosci", {
+  title: "Polityka prywatności i plików cookies",
   description:
-    "Polityka prywatności i plików cookies serwisu pomocnytomek.pl. Zasady przetwarzania danych osobowych oraz wykorzystywania cookies.",
-};
+    "Polityka prywatności i cookies serwisu Pomocny Tomek (pomocnytomek.pl): zasady przetwarzania danych osobowych i plików cookies.",
+});
 
 const SECTIONS = [
   { id: "admin", label: "1. Administrator danych osobowych" },

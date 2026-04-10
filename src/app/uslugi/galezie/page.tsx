@@ -2,12 +2,13 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import CTAButton from "@/components/CTAButton";
 import FeatureCheckList from "@/components/FeatureCheckList";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Rozdrabnianie gałęzi po przycince – Pomocny Tomek",
+export const metadata: Metadata = pageMetadata("/uslugi/galezie", {
+  title: "Rozdrabnianie gałęzi rębakiem po przycince",
   description:
-    "Rozdrabnianie gałęzi własnym rębakiem. Do 12 cm grubości. Jastrzębie-Zdrój, Cieszyn i okolice. Zadzwoń: 517 363 915.",
-};
+    "Rozdrabnianie gałęzi własnym rębakiem — gałęzie do ok. 12 cm. Usługa w Jastrzębiu-Zdroju, Cieszynie i okolicach. Mniej wywozu, porządek na działce. Tel. 517 363 915.",
+});
 
 export default function GaleziePage() {
   return (
@@ -29,7 +30,7 @@ export default function GaleziePage() {
             Rozdrabnianie gałęzi po przycince
           </h1>
           <p className="text-lg md:text-xl text-white/80 leading-relaxed max-w-2xl mb-10">
-            Po przycince drzew i krzewów bardzo szybko robi się sterta gałęzi, którą trzeba jakoś uprzątnąć. Przyjeżdżam własnym rębakiem, rozdrabniam gałęzie na miejscu i ogarniam temat bez zbędnego kombinowania.
+            Po przycince drzew i krzewów bardzo szybko robi się sterta gałęzi, którą trzeba jakoś uprzątnąć. Przyjeżdżam własnym rębakiem, rozdrabniam gałęzie na miejscu i rozwiązuję problem szybko oraz konkretnie.
           </p>
           <CTAButton large />
         </div>
@@ -50,18 +51,41 @@ export default function GaleziePage() {
         </div>
       </section>
 
-      {/* SEKCJA 1: JAK TO WYGLĄDA */}
+      {/* SEKCJA 1: JAK TO WYGLĄDA + ZDJĘCIE PRZED/PO (jak na glebogryzarce) */}
       <section className="py-20 md:py-28 bg-cream">
-        <div className="mx-auto max-w-3xl px-4 sm:px-6">
+        <div className="mx-auto max-w-3xl px-4 sm:px-6 mb-12 md:mb-16">
           <p className="text-forest text-xs font-semibold uppercase tracking-widest mb-4">
             Jak to wygląda
           </p>
           <h2 className="text-2xl sm:text-3xl font-bold text-text tracking-tight mb-6">
             Nie musisz nic organizować po swojej stronie
           </h2>
-          <p className="text-text-light leading-relaxed">
+          <p className="text-text-light leading-relaxed mb-6">
             Nie musisz organizować sprzętu, ciąć wszystkiego ręcznie ani zastanawiać się, co zrobić z gałęziami po przycince. Przyjeżdżam, robię swoją robotę i po wszystkim zostaje porządek.
           </p>
+          <div className="rounded-2xl border border-cream-dark/50 bg-white p-6">
+            <p className="text-sm font-semibold text-text mb-2">
+              Co zostaje po rozdrabnianiu?
+            </p>
+            <p className="text-text-light text-[15px] leading-relaxed">
+              Duże sterty gałęzi zamieniają się w niewielką ilość zrębków. Często nie trzeba niczego wywozić. Zrębki można rozplantować na działce (np. pod krzewy) i temat bałaganu znika.
+            </p>
+          </div>
+        </div>
+        <div className="mx-auto max-w-4xl px-4 sm:px-6">
+          <figure className="rounded-2xl overflow-hidden bg-white shadow-sm border border-cream-dark/30">
+            <Image
+              src="/Przycinanie_galezi_przed-po.webp"
+              alt="Rozdrabnianie gałęzi — porównanie przed i po na działce"
+              width={1600}
+              height={900}
+              className="w-full h-auto"
+              sizes="(max-width: 896px) 100vw, 896px"
+            />
+            <figcaption className="text-center text-sm text-text-light px-4 py-3 bg-cream/50 border-t border-cream-dark/30">
+              Przed i po - gałęzie
+            </figcaption>
+          </figure>
         </div>
       </section>
 
@@ -87,41 +111,93 @@ export default function GaleziePage() {
                 variant="cream"
               />
             </div>
-            <div className="group relative aspect-square lg:aspect-[3/4] rounded-2xl overflow-hidden shadow-sm">
+
+            <figure className="rounded-2xl overflow-hidden bg-white shadow-sm border border-cream-dark/30">
               <Image
-                src="/galezie_1.jpeg"
-                alt="Rębak Cedrus w pracy"
-                fill
-                className="object-cover object-center transition-transform duration-500 ease-out group-hover:scale-105"
+                src="/rebak_rozdrabnianie_galezi.webp"
+                alt="Rębak do gałęzi przy rozdrabnianiu po przycince"
+                width={1600}
+                height={900}
+                className="w-full h-auto"
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
-            </div>
+            </figure>
           </div>
         </div>
       </section>
 
-      {/* SEKCJA 3: ZDJĘCIA Z PRACY */}
-      <section className="py-20 md:py-28 bg-cream">
-        <div className="mx-auto max-w-5xl px-4 sm:px-6">
-          <div className="text-center mb-10">
-            <h2 className="text-2xl sm:text-3xl font-bold text-text tracking-tight">
-              Zobacz przykładowe realizacje
-            </h2>
+      {/* SEKCJA 3: PRZYKŁADOWE REALIZACJE — rytm pionowy: padding sekcji = odstępy między blokami */}
+      <section className="bg-cream">
+        <div className="mx-auto max-w-5xl px-4 sm:px-6 flex flex-col gap-20 md:gap-28 py-20 md:py-28">
+          <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_min(360px,100%)] lg:items-center lg:gap-10">
+            <div className="min-w-0 text-center lg:text-left">
+              <h2 className="text-2xl sm:text-3xl font-bold text-text tracking-tight">
+                Zobacz przykładowe realizacje
+              </h2>
+              <div className="mt-3 flex flex-col items-center gap-4 lg:flex-row lg:items-center">
+                <p className="text-text-light text-[15px] leading-relaxed">
+                  Krótki film z pracy rębaka.
+                </p>
+                <span
+                  className="hidden lg:inline-flex items-center gap-0 text-forest/45"
+                  aria-hidden
+                >
+                  <span className="h-0.5 w-20 rounded-full bg-current sm:w-28" />
+                  <svg
+                    width="28"
+                    height="12"
+                    viewBox="0 0 28 12"
+                    className="-ml-px shrink-0"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 6h22M18 1l5 5-5 5"
+                      stroke="currentColor"
+                      strokeWidth="1.75"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </span>
+              </div>
+            </div>
+
+            <div className="flex w-full justify-center lg:justify-end">
+              <div className="w-full max-w-[360px] shrink-0">
+                <div className="rounded-2xl overflow-hidden bg-white shadow-sm border border-cream-dark/30">
+                  <div className="relative aspect-[9/16] w-full bg-black">
+                    <iframe
+                      className="absolute inset-0 h-full w-full border-0"
+                      src="https://www.youtube-nocookie.com/embed/QN3taUfc9dc?rel=0&modestbranding=1"
+                      title="Rozdrabnianie gałęzi - film z pracy"
+                      width={360}
+                      height={640}
+                      loading="lazy"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      referrerPolicy="strict-origin-when-cross-origin"
+                      allowFullScreen
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
+
           <div className="grid sm:grid-cols-2 gap-6">
-            <div className="group relative aspect-[4/3] rounded-2xl overflow-hidden shadow-sm">
+            <div className="group relative aspect-[4/3] rounded-2xl overflow-hidden shadow-sm border border-cream-dark/30">
               <Image
-                src="/galezie_1.jpeg"
-                alt="Rozdrabnianie gałęzi – rębak w akcji"
+                src="/galezie_1.webp"
+                alt="Rębak do rozdrabniania gałęzi w pracy"
                 fill
                 className="object-cover object-center transition-transform duration-500 ease-out group-hover:scale-105"
                 sizes="(max-width: 640px) 100vw, 50vw"
               />
             </div>
-            <div className="group relative aspect-[4/3] rounded-2xl overflow-hidden shadow-sm">
+            <div className="group relative aspect-[4/3] rounded-2xl overflow-hidden shadow-sm border border-cream-dark/30">
               <Image
-                src="/galezie_2.jpeg"
-                alt="Gotowe zrębki – efekt pracy"
+                src="/galezie_2.webp"
+                alt="Zrębki po rozdrabnianiu gałęzi — efekt pracy rębakiem"
                 fill
                 className="object-cover object-center transition-transform duration-500 ease-out group-hover:scale-105"
                 sizes="(max-width: 640px) 100vw, 50vw"

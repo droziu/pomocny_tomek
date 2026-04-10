@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import { Wrench, TrendingDown, Phone as PhoneIcon } from "lucide-react";
 import CTAButton from "@/components/CTAButton";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Cennik – Pomocny Tomek",
+export const metadata: Metadata = pageMetadata("/cennik", {
+  title: "Cennik usług — rąbanie drewna, glebogryzarka, działka",
   description:
-    "Jasny cennik usług: rąbanie drewna, rozdrabnianie gałęzi, koszenie, sprzątanie działek, glebogryzarka. Od 350 zł za 2h. Zadzwoń: 517 363 915.",
-};
+    "Orientacyjny cennik Pomocnego Tomka: prace z łuparką, rębakiem, glebogryzarką i innym sprzętem. Od 350 zł za pierwsze 2 h z dojazdem. Jastrzębie-Zdrój, Cieszyn i okolice. Tel. 517 363 915.",
+});
 
 const pricingBlocks = [
   {
@@ -14,8 +15,15 @@ const pricingBlocks = [
     label: "Prace z użyciem większego sprzętu",
     sublabel: "łuparka, rębak, glebogryzarka, traktorek",
     items: [
-      { price: "350 zł", desc: "za pierwsze 2 godziny razem z dojazdem i przygotowaniem sprzętu" },
+      {
+        price: "350 zł",
+        desc: "standardowy punkt wyjścia (minimum) za pierwsze 2 godziny razem z dojazdem i przygotowaniem sprzętu",
+      },
       { price: "około 100 zł", desc: "za każdą kolejną rozpoczętą godzinę" },
+      {
+        price: null,
+        desc: "Przy większych, nietypowych albo innych pracach wycena może być ustalana indywidualnie, więc zawsze warto zadzwonić i dogadać szczegóły.",
+      },
     ],
   },
   {
@@ -37,6 +45,17 @@ const pricingBlocks = [
       {
         price: null,
         desc: "Koszenie, przycięcie żywopłotu albo inne mniejsze prace wyceniam indywidualnie. Zadzwoń i opowiedz, co jest do zrobienia.",
+      },
+    ],
+  },
+  {
+    icon: Wrench,
+    label: "Frezowanie pni",
+    sublabel: null,
+    items: [
+      {
+        price: null,
+        desc: "Bez sztywnego cennika, tylko wycena indywidualna. Cena zależy m.in. od grubości pnia, rodzaju drzewa i dostępności miejsca. Zadzwoń, a od razu powiem Ci, jak to wygląda kosztowo.",
       },
     ],
   },

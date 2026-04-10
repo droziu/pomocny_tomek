@@ -2,12 +2,13 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import { Zap, CloudRain } from "lucide-react";
 import CTAButton from "@/components/CTAButton";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Rąbanie drewna na opał – Pomocny Tomek",
+export const metadata: Metadata = pageMetadata("/uslugi/drewno", {
+  title: "Rąbanie i łupanie drewna na opał",
   description:
-    "Szybkie rąbanie drewna łuparką kinetyczną 15t. Około 3 m³ na godzinę. Spalinowa, bez prądu. Namiot roboczy – pracuję w każdą pogodę. Jastrzębie-Zdrój, Cieszyn i okolice. Zadzwoń: 517 363 915.",
-};
+    "Łupanie i rąbanie drewna łuparką kinetyczną 15 t — mobilna usługa w Jastrzębiu-Zdroju, Cieszynie i okolicach. Spalinowa, bez prądu, możliwość pracy przy gorszej pogodzie. Tel. 517 363 915.",
+});
 
 export default function DrewnoPage() {
   return (
@@ -67,23 +68,24 @@ export default function DrewnoPage() {
                 Nie pracuję siekierą ani wolnym sprzętem, przy którym wszystko ciągnie się godzinami. Używam szybkiej łuparki kinetycznej o nacisku 15 ton, dzięki czemu robota idzie sprawnie i bez zbędnego czekania.
               </p>
               <p className="text-text-light leading-relaxed mb-8">
-                W praktyce oznacza to tyle, że w godzinę mogę przygotować nawet około 3 metrów sześciennych drewna. Im szybciej to zrobię, tym mniej płacisz za moją pracę.
+                W praktyce oznacza to tyle, że robota idzie sprawniej, a Ty nie płacisz za „ciągnięcie” tematu godzinami.
               </p>
               <div className="rounded-xl bg-white p-5 border border-cream-dark/40">
                 <p className="text-sm font-semibold text-text mb-3">Jakie drewno mogę porąbać?</p>
                 <p className="text-text-light text-[15px] leading-relaxed mb-2">
-                  Maszyna dobrze radzi sobie także z większymi kawałkami drewna:
+                  Większe kawałki drewna nie są problemem.
                 </p>
-                <ul className="space-y-1 text-text-light text-[15px]">
-                  <li>• długość polan: do 50–55 cm</li>
-                  <li>• szerokość: około 35–45 cm</li>
+                <ul className="space-y-1.5 text-text-light text-[15px]">
+                  <li>• Nie ograniczam się sztywno do „książkowych” parametrów.</li>
+                  <li>• W trudniejszych przypadkach też da się to ogarnąć – dobieram sposób pracy do tego, co jest na miejscu.</li>
+                  <li>• Jak masz wątpliwości, po prostu zadzwoń i opowiedz, co to za drewno.</li>
                 </ul>
               </div>
             </div>
             <div className="group relative aspect-square lg:aspect-[3/4] rounded-2xl overflow-hidden shadow-sm">
               <Image
-                src="/drewno_1.jpeg"
-                alt="Rąbanie drewna – łuparka w akcji"
+                src="/drewno_1.webp"
+                alt="Łuparka kinetyczna przy rąbaniu drewna na opał — usługa w Jastrzębiu-Zdroju i okolicach"
                 fill
                 className="object-cover object-[center_55%] transition-transform duration-500 ease-out group-hover:scale-105"
                 sizes="(max-width: 1024px) 100vw, 50vw"
@@ -130,19 +132,70 @@ export default function DrewnoPage() {
         </div>
       </section>
 
-      {/* SEKCJA 3: ZDJĘCIA Z PRACY */}
-      <section className="py-20 md:py-28 bg-cream">
-        <div className="mx-auto max-w-5xl px-4 sm:px-6">
-          <div className="text-center mb-10">
-            <h2 className="text-2xl sm:text-3xl font-bold text-text tracking-tight">
-              Zobacz, jak wygląda moja praca w praktyce
-            </h2>
+      {/* SEKCJA 3: ZDJĘCIA Z PRACY — rytm pionowy: padding sekcji = odstępy między blokami */}
+      <section className="bg-cream">
+        <div className="mx-auto max-w-5xl px-4 sm:px-6 flex flex-col gap-20 md:gap-28 py-20 md:py-28">
+          {/* lg+: tekst | film; poniżej lg: stack — stała szerokość kolumny z filmem (auto + w-full zawalało siatkę) */}
+          <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_min(360px,100%)] lg:items-center lg:gap-10">
+            <div className="min-w-0 text-center lg:text-left">
+              <h2 className="text-2xl sm:text-3xl font-bold text-text tracking-tight">
+                Zobacz, jak wygląda moja praca w praktyce
+              </h2>
+              <div className="mt-3 flex flex-col items-center gap-4 lg:flex-row lg:items-center">
+                <p className="text-text-light text-[15px] leading-relaxed">
+                  Krótki film z pracy łuparki.
+                </p>
+                <span
+                  className="hidden lg:inline-flex items-center gap-0 text-forest/45"
+                  aria-hidden
+                >
+                  <span className="h-0.5 w-20 rounded-full bg-current sm:w-28" />
+                  <svg
+                    width="28"
+                    height="12"
+                    viewBox="0 0 28 12"
+                    className="-ml-px shrink-0"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 6h22M18 1l5 5-5 5"
+                      stroke="currentColor"
+                      strokeWidth="1.75"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </span>
+              </div>
+            </div>
+
+            <div className="flex w-full justify-center lg:justify-end">
+              <div className="w-full max-w-[360px] shrink-0">
+                <div className="rounded-2xl overflow-hidden bg-white shadow-sm border border-cream-dark/30">
+                  <div className="relative aspect-[9/16] w-full bg-black">
+                    <iframe
+                      className="absolute inset-0 h-full w-full border-0"
+                      src="https://www.youtube-nocookie.com/embed/XNEtqJimVZs?rel=0&modestbranding=1"
+                      title="Rąbanie drewna łuparką - film z pracy"
+                      width={360}
+                      height={640}
+                      loading="lazy"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      referrerPolicy="strict-origin-when-cross-origin"
+                      allowFullScreen
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
+
           <div className="grid sm:grid-cols-2 gap-6">
             <div className="group relative aspect-[4/3] rounded-2xl overflow-hidden shadow-sm">
               <Image
-                src="/drewno_1.jpeg"
-                alt="Tomek przy rąbaniu drewna"
+                src="/drewno_1.webp"
+                alt="Praca przy rąbaniu drewna na działce — porąbane polana"
                 fill
                 className="object-cover object-[center_55%] transition-transform duration-500 ease-out group-hover:scale-105"
                 sizes="(max-width: 640px) 100vw, 50vw"
@@ -150,13 +203,29 @@ export default function DrewnoPage() {
             </div>
             <div className="group relative aspect-[4/3] rounded-2xl overflow-hidden shadow-sm">
               <Image
-                src="/drewno_2.jpeg"
-                alt="Porąbane drewno – efekt pracy"
+                src="/drewno_2.webp"
+                alt="Porąbane drewno na opał — efekt pracy łuparką"
                 fill
                 className="object-cover object-center transition-transform duration-500 ease-out group-hover:scale-105"
                 sizes="(max-width: 640px) 100vw, 50vw"
               />
             </div>
+          </div>
+
+          <div className="mx-auto w-full max-w-4xl">
+            <figure className="rounded-2xl overflow-hidden bg-white shadow-sm border border-cream-dark/30">
+              <Image
+                src="/luparka-przed-po.webp"
+                alt="Łupanie drewna — zdjęcie przed i po z pracy łuparką"
+                width={1600}
+                height={900}
+                className="w-full h-auto"
+                sizes="(max-width: 896px) 100vw, 896px"
+              />
+              <figcaption className="text-center text-sm text-text-light px-4 py-3 bg-cream/50 border-t border-cream-dark/30">
+                Przed i po - łuparka
+              </figcaption>
+            </figure>
           </div>
         </div>
       </section>

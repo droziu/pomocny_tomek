@@ -15,13 +15,19 @@ import {
   Leaf,
   Tractor,
   TreeDeciduous,
+  Trees,
+  Drill,
+  Scissors,
 } from "lucide-react";
 
 const services = [
   { href: "/uslugi/drewno", label: "Rąbanie drewna", icon: Axe },
   { href: "/uslugi/galezie", label: "Rozdrabnianie gałęzi", icon: TreeDeciduous },
-  { href: "/uslugi/sprzatanie", label: "Sprzątanie działek", icon: Leaf },
+  { href: "/uslugi/sprzatanie", label: "Oczyszczanie działek", icon: Leaf },
   { href: "/uslugi/glebogryzarka", label: "Glebogryzarka", icon: Tractor },
+  { href: "/uslugi/frezowanie-pni", label: "Frezowanie pni", icon: Trees },
+  { href: "/uslugi/wiercenie-otworow", label: "Wiercenie otworów", icon: Drill },
+  { href: "/uslugi/przycinka-drzew", label: "Przycinka drzew", icon: Scissors },
 ];
 
 const navLinks = [
@@ -96,7 +102,7 @@ export default function Header() {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/Logo_1_2d2.png"
-              alt="Pomocny Tomek"
+              alt="Pomocny Tomek — logo"
               className="h-10 w-auto md:h-12 object-contain drop-shadow-sm"
             />
           </Link>

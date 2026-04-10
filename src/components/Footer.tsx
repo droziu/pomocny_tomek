@@ -14,32 +14,81 @@ export default function Footer() {
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/Logo_1_2d2.png"
-                alt="Pomocny Tomek"
+                alt="Pomocny Tomek — logo"
                 className="h-10 w-auto opacity-95 hover:opacity-100 transition-opacity object-contain object-left brightness-0 invert"
               />
             </Link>
 
             {/* Linki */}
-            <nav className="flex flex-wrap gap-x-8 gap-y-1">
-              <Link href="/" className="text-sm text-white/70 hover:text-white transition-colors py-1">
+            <nav className="flex flex-wrap gap-x-8 gap-y-1" aria-label="Skróty do podstron">
+              <Link
+                href="/"
+                title="Strona główna Pomocny Tomek"
+                className="text-sm text-white/70 hover:text-white transition-colors py-1"
+              >
                 Strona Główna
               </Link>
-              <Link href="/uslugi/drewno" className="text-sm text-white/70 hover:text-white transition-colors py-1">
+              <Link
+                href="/uslugi/drewno"
+                title="Rąbanie i łupanie drewna — Jastrzębie-Zdrój, Cieszyn"
+                className="text-sm text-white/70 hover:text-white transition-colors py-1"
+              >
                 Rąbanie drewna
               </Link>
-              <Link href="/uslugi/galezie" className="text-sm text-white/70 hover:text-white transition-colors py-1">
+              <Link
+                href="/uslugi/galezie"
+                title="Rozdrabnianie gałęzi rębakiem — usługa mobilna"
+                className="text-sm text-white/70 hover:text-white transition-colors py-1"
+              >
                 Rozdrabnianie gałęzi
               </Link>
-              <Link href="/uslugi/sprzatanie" className="text-sm text-white/70 hover:text-white transition-colors py-1">
-                Sprzątanie działek
+              <Link
+                href="/uslugi/sprzatanie"
+                title="Oczyszczanie działek i terenu"
+                className="text-sm text-white/70 hover:text-white transition-colors py-1"
+              >
+                Oczyszczanie działek
               </Link>
-              <Link href="/uslugi/glebogryzarka" className="text-sm text-white/70 hover:text-white transition-colors py-1">
+              <Link
+                href="/uslugi/glebogryzarka"
+                title="Spulchnianie ziemi glebogryzarką"
+                className="text-sm text-white/70 hover:text-white transition-colors py-1"
+              >
                 Glebogryzarka
               </Link>
-              <Link href="/cennik" className="text-sm text-white/70 hover:text-white transition-colors py-1">
+              <Link
+                href="/uslugi/frezowanie-pni"
+                title="Frezowanie i usuwanie pni"
+                className="text-sm text-white/70 hover:text-white transition-colors py-1"
+              >
+                Frezowanie pni
+              </Link>
+              <Link
+                href="/uslugi/wiercenie-otworow"
+                title="Wiercenie otworów w ziemi pod ogrodzenie i drzewka"
+                className="text-sm text-white/70 hover:text-white transition-colors py-1"
+              >
+                Wiercenie otworów
+              </Link>
+              <Link
+                href="/uslugi/przycinka-drzew"
+                title="Przycinka drzew owocowych i mniejszych drzew"
+                className="text-sm text-white/70 hover:text-white transition-colors py-1"
+              >
+                Przycinka drzew
+              </Link>
+              <Link
+                href="/cennik"
+                title="Cennik usług Pomocny Tomek"
+                className="text-sm text-white/70 hover:text-white transition-colors py-1"
+              >
                 Cennik
               </Link>
-              <Link href="/kontakt" className="text-sm text-white/70 hover:text-white transition-colors py-1">
+              <Link
+                href="/kontakt"
+                title="Kontakt i telefon do Pomocnego Tomka"
+                className="text-sm text-white/70 hover:text-white transition-colors py-1"
+              >
                 Kontakt
               </Link>
             </nav>

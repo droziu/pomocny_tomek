@@ -2,12 +2,13 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import { CheckCircle2 } from "lucide-react";
 import CTAButton from "@/components/CTAButton";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Spulchnianie ziemi glebogryzarką – Pomocny Tomek",
+export const metadata: Metadata = pageMetadata("/uslugi/glebogryzarka", {
+  title: "Glebogryzarka — spulchnianie ziemi pod ogród i trawnik",
   description:
-    "Spulchnianie ziemi pod trawnik, ogród i warzywniak. Własna glebogryzarka. Jastrzębie-Zdrój, Cieszyn i okolice. Zadzwoń: 517 363 915.",
-};
+    "Usługa glebogryzarką: spulchnianie ziemi pod trawnik, warzywnik i ogród. Jastrzębie-Zdrój, Cieszyn i okolice. Własny sprzęt. Tel. 517 363 915.",
+});
 
 export default function GlebogryzarkaPage() {
   return (
@@ -83,26 +84,19 @@ export default function GlebogryzarkaPage() {
           </ul>
         </div>
         <div className="mx-auto max-w-4xl px-4 sm:px-6">
-          <div className="grid sm:grid-cols-2 gap-6">
-            <div className="rounded-2xl overflow-hidden bg-white shadow-sm">
-              <Image
-                src="/gleba1.jpeg"
-                alt="Glebogryzarka STIHL MH600"
-                width={560}
-                height={375}
-                className="w-full aspect-[4/3] object-cover"
-              />
-            </div>
-            <div className="rounded-2xl overflow-hidden bg-white shadow-sm">
-              <Image
-                src="/gleba2.jpeg"
-                alt="Efekt pracy glebogryzarką"
-                width={560}
-                height={375}
-                className="w-full aspect-[4/3] object-cover"
-              />
-            </div>
-          </div>
+          <figure className="rounded-2xl overflow-hidden bg-white shadow-sm border border-cream-dark/30">
+            <Image
+              src="/Glebogryzarka-przed-po.webp"
+              alt="Spulchnianie ziemi glebogryzarką — zdjęcie przed i po"
+              width={1600}
+              height={900}
+              className="w-full h-auto"
+              sizes="(max-width: 896px) 100vw, 896px"
+            />
+            <figcaption className="text-center text-sm text-text-light px-4 py-3 bg-cream/50 border-t border-cream-dark/30">
+              Przed i po - glebogryzarka
+            </figcaption>
+          </figure>
         </div>
       </section>
 
