@@ -11,9 +11,10 @@
   --color-wood: #8B6914;
   --color-wood-light: #C4A35A;
   --color-wood-dark: #6B4F10;
-  --color-cta: #E8872A;
-  --color-cta-hover: #D47520;
-  --color-cta-light: #FFF3E8;
+  /* Kontrast z białym tekstem ≥ WCAG AA 4,5:1 (przyciski „Zadzwoń”) */
+  --color-cta: #b45309;
+  --color-cta-hover: #8f3f0c;
+  --color-cta-light: #fff3e8;
   --color-warm-gray: #6B6560;
   --color-warm-gray-light: #9E9893;
   --color-text: #2C2926;

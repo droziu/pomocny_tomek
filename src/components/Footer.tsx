@@ -29,70 +29,70 @@ export default function Footer() {
               <Link
                 href="/"
                 title="Strona główna Pomocny Tomek"
-                className="text-sm text-white/70 hover:text-white transition-colors py-1"
+                className="text-sm text-white/90 hover:text-white transition-colors py-1"
               >
                 Strona Główna
               </Link>
               <Link
                 href="/uslugi/drewno"
                 title="Rąbanie i łupanie drewna — Jastrzębie-Zdrój, Cieszyn"
-                className="text-sm text-white/70 hover:text-white transition-colors py-1"
+                className="text-sm text-white/90 hover:text-white transition-colors py-1"
               >
                 Rąbanie drewna
               </Link>
               <Link
                 href="/uslugi/galezie"
                 title="Rozdrabnianie gałęzi rębakiem — usługa mobilna"
-                className="text-sm text-white/70 hover:text-white transition-colors py-1"
+                className="text-sm text-white/90 hover:text-white transition-colors py-1"
               >
                 Rozdrabnianie gałęzi
               </Link>
               <Link
                 href="/uslugi/sprzatanie"
                 title="Oczyszczanie działek i terenu"
-                className="text-sm text-white/70 hover:text-white transition-colors py-1"
+                className="text-sm text-white/90 hover:text-white transition-colors py-1"
               >
                 Oczyszczanie działek
               </Link>
               <Link
                 href="/uslugi/glebogryzarka"
                 title="Spulchnianie ziemi glebogryzarką"
-                className="text-sm text-white/70 hover:text-white transition-colors py-1"
+                className="text-sm text-white/90 hover:text-white transition-colors py-1"
               >
                 Glebogryzarka
               </Link>
               <Link
                 href="/uslugi/frezowanie-pni"
                 title="Frezowanie i usuwanie pni"
-                className="text-sm text-white/70 hover:text-white transition-colors py-1"
+                className="text-sm text-white/90 hover:text-white transition-colors py-1"
               >
                 Frezowanie pni
               </Link>
               <Link
                 href="/uslugi/wiercenie-otworow"
                 title="Wiercenie otworów w ziemi pod ogrodzenie i drzewka"
-                className="text-sm text-white/70 hover:text-white transition-colors py-1"
+                className="text-sm text-white/90 hover:text-white transition-colors py-1"
               >
                 Wiercenie otworów
               </Link>
               <Link
                 href="/uslugi/przycinka-drzew"
                 title="Przycinka drzew owocowych i mniejszych drzew"
-                className="text-sm text-white/70 hover:text-white transition-colors py-1"
+                className="text-sm text-white/90 hover:text-white transition-colors py-1"
               >
                 Przycinka drzew
               </Link>
               <Link
                 href="/cennik"
                 title="Cennik usług Pomocny Tomek"
-                className="text-sm text-white/70 hover:text-white transition-colors py-1"
+                className="text-sm text-white/90 hover:text-white transition-colors py-1"
               >
                 Cennik
               </Link>
               <Link
                 href="/kontakt"
                 title="Kontakt i telefon do Pomocnego Tomka"
-                className="text-sm text-white/70 hover:text-white transition-colors py-1"
+                className="text-sm text-white/90 hover:text-white transition-colors py-1"
               >
                 Kontakt
               </Link>
@@ -108,7 +108,7 @@ export default function Footer() {
             </a>
           </div>
 
-          <div className="mt-10 flex flex-col sm:flex-row items-center gap-2 text-sm text-white/50">
+          <div className="mt-10 flex flex-col sm:flex-row items-center gap-2 text-sm text-white/80">
             <span className="inline-flex items-center gap-1.5">
               <MapPin className="h-4 w-4" />
               Jastrzębie-Zdrój, Cieszyn i okolice
@@ -117,13 +117,13 @@ export default function Footer() {
         </div>
 
         {/* Dolny pasek */}
-        <div className="py-4 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-white/40">
+        <div className="py-4 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-white/70">
           <p suppressHydrationWarning>&copy; {new Date().getFullYear()} Pomocny Tomek</p>
           <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-1">
-            <Link href="/polityka-prywatnosci" className="hover:text-white/60 transition-colors">
+            <Link href="/polityka-prywatnosci" className="text-white/80 hover:text-white underline-offset-2 hover:underline transition-colors">
               Polityka prywatności i plików cookies
             </Link>
-            <CookieSettingsTrigger className="hover:text-white/60 transition-colors">
+            <CookieSettingsTrigger className="text-white/80 hover:text-white underline-offset-2 hover:underline transition-colors">
               Zmień ustawienia cookies
             </CookieSettingsTrigger>
           </div>
