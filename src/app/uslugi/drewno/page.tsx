@@ -2,12 +2,16 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import { Zap, CloudRain } from "lucide-react";
 import CTAButton from "@/components/CTAButton";
+import { IMG } from "@/lib/imageAssets";
 import { pageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = pageMetadata("/uslugi/drewno", {
   title: "Rąbanie i łupanie drewna na opał",
   description:
     "Łupanie i rąbanie drewna łuparką kinetyczną 15 t — mobilna usługa w Jastrzębiu-Zdroju, Cieszynie i okolicach. Spalinowa, bez prądu, możliwość pracy przy gorszej pogodzie. Tel. 517 363 915.",
+  ogImage: "/luparka-przed-po.webp",
+  ogImageWidth: IMG.landscapePo.w,
+  ogImageHeight: IMG.landscapePo.h,
 });
 
 export default function DrewnoPage() {
@@ -217,8 +221,8 @@ export default function DrewnoPage() {
               <Image
                 src="/luparka-przed-po.webp"
                 alt="Łupanie drewna — zdjęcie przed i po z pracy łuparką"
-                width={1600}
-                height={900}
+                width={IMG.landscapePo.w}
+                height={IMG.landscapePo.h}
                 className="w-full h-auto"
                 sizes="(max-width: 896px) 100vw, 896px"
               />

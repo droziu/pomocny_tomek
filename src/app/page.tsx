@@ -18,6 +18,7 @@ import {
 import CTAButton from "@/components/CTAButton";
 import ServiceCard from "@/components/ServiceCard";
 import PostalCodeChecker from "@/components/PostalCodeChecker";
+import { IMG } from "@/lib/imageAssets";
 import { pageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = pageMetadata("/", {
@@ -86,6 +87,9 @@ export default function Home() {
                   <img
                     src="/Logo_Pomocny_Tomek.webp"
                     alt="Pomocny Tomek — logo"
+                    width={IMG.logo.w}
+                    height={IMG.logo.h}
+                    decoding="async"
                     className="h-[4.25rem] w-auto max-w-[240px] object-contain opacity-95 brightness-0 invert sm:h-[4.75rem]"
                   />
                 </div>

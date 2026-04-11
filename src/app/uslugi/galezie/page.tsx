@@ -2,12 +2,16 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import CTAButton from "@/components/CTAButton";
 import FeatureCheckList from "@/components/FeatureCheckList";
+import { IMG } from "@/lib/imageAssets";
 import { pageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = pageMetadata("/uslugi/galezie", {
   title: "Rozdrabnianie gałęzi rębakiem po przycince",
   description:
     "Rozdrabnianie gałęzi własnym rębakiem — gałęzie do ok. 12 cm. Usługa w Jastrzębiu-Zdroju, Cieszynie i okolicach. Mniej wywozu, porządek na działce. Tel. 517 363 915.",
+  ogImage: "/Przycinanie_galezi_przed-po.webp",
+  ogImageWidth: IMG.landscapePo.w,
+  ogImageHeight: IMG.landscapePo.h,
 });
 
 export default function GaleziePage() {
@@ -77,8 +81,8 @@ export default function GaleziePage() {
             <Image
               src="/Przycinanie_galezi_przed-po.webp"
               alt="Rozdrabnianie gałęzi — porównanie przed i po na działce"
-              width={1600}
-              height={900}
+              width={IMG.landscapePo.w}
+              height={IMG.landscapePo.h}
               className="w-full h-auto"
               sizes="(max-width: 896px) 100vw, 896px"
             />
@@ -116,8 +120,8 @@ export default function GaleziePage() {
               <Image
                 src="/rebak_rozdrabnianie_galezi.webp"
                 alt="Rębak do gałęzi przy rozdrabnianiu po przycince"
-                width={1600}
-                height={900}
+                width={IMG.rebak.w}
+                height={IMG.rebak.h}
                 className="w-full h-auto"
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />

@@ -1,7 +1,10 @@
 import type { Metadata } from "next";
+import { IMG } from "@/lib/imageAssets";
 import { DEFAULT_LOCALE, SITE_NAME, SITE_URL } from "@/lib/site";
 
 const defaultOgImage = "/Pomocny%20Tomek%20HERO.webp";
+const defaultOgW = IMG.heroPortrait.w;
+const defaultOgH = IMG.heroPortrait.h;
 
 function canonicalUrl(path: string): string {
   const p = path === "" || path === "/" ? "" : path.startsWith("/") ? path : `/${path}`;
@@ -24,8 +27,8 @@ export function pageMetadata(
 ): Metadata {
   const url = canonicalUrl(path);
   const ogImagePath = opts.ogImage ?? defaultOgImage;
-  const ogW = opts.ogImageWidth ?? 1200;
-  const ogH = opts.ogImageHeight ?? 630;
+  const ogW = opts.ogImageWidth ?? defaultOgW;
+  const ogH = opts.ogImageHeight ?? defaultOgH;
   const displayTitle = opts.absoluteTitle
     ? opts.title
     : `${opts.title} | ${SITE_NAME}`;

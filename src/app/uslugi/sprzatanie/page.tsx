@@ -2,12 +2,16 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import { CheckCircle2 } from "lucide-react";
 import CTAButton from "@/components/CTAButton";
+import { IMG } from "@/lib/imageAssets";
 import { pageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = pageMetadata("/uslugi/sprzatanie", {
   title: "Oczyszczanie działek, usuwanie krzaków i samosiejek",
   description:
     "Oczyszczanie działek i terenu: usuwanie krzaków i samosiejek, wycinka krzewów, porządkowanie zaniedbanego terenu. Jastrzębie-Zdrój, Cieszyn i okolice. Tel. 517 363 915.",
+  ogImage: "/gleba1.webp",
+  ogImageWidth: IMG.gleba.w,
+  ogImageHeight: IMG.gleba.h,
 });
 
 const zakres = [
@@ -105,18 +109,20 @@ export default function OczyszczanieDzialekPage() {
               <Image
                 src="/gleba1.webp"
                 alt="Oczyszczanie działki — przykład prac w terenie"
-                width={560}
-                height={375}
+                width={IMG.gleba.w}
+                height={IMG.gleba.h}
                 className="w-full aspect-[4/3] object-cover"
+                sizes="(max-width: 640px) 100vw, 50vw"
               />
             </div>
             <div className="rounded-2xl overflow-hidden bg-white shadow-sm">
               <Image
                 src="/gleba2.webp"
                 alt="Oczyszczanie terenu — efekt po pracach"
-                width={560}
-                height={375}
+                width={IMG.gleba.w}
+                height={IMG.gleba.h}
                 className="w-full aspect-[4/3] object-cover"
+                sizes="(max-width: 640px) 100vw, 50vw"
               />
             </div>
           </div>

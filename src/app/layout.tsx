@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import StickyBottomBar from "@/components/StickyBottomBar";
 import CookieBanner from "@/components/CookieBanner";
 import StructuredData from "@/components/StructuredData";
+import { IMG } from "@/lib/imageAssets";
 import { DEFAULT_LOCALE, SITE_NAME, SITE_URL } from "@/lib/site";
 
 const inter = Inter({
@@ -46,8 +47,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: "/Pomocny%20Tomek%20HERO.webp",
-        width: 1200,
-        height: 630,
+        width: IMG.heroPortrait.w,
+        height: IMG.heroPortrait.h,
         alt: `${SITE_NAME} — usługi przy drewnie i na działce`,
       },
     ],
@@ -95,6 +96,7 @@ export default function RootLayout({
   return (
     <html lang="pl" suppressHydrationWarning>
       <head>
+        <link rel="preconnect" href="https://www.youtube-nocookie.com" />
         <link rel="dns-prefetch" href="https://www.youtube-nocookie.com" />
       </head>
       <body className={`${inter.variable} font-sans antialiased`} suppressHydrationWarning>

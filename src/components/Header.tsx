@@ -19,6 +19,7 @@ import {
   Drill,
   Scissors,
 } from "lucide-react";
+import { IMG } from "@/lib/imageAssets";
 
 const services = [
   { href: "/uslugi/drewno", label: "Rąbanie drewna", icon: Axe },
@@ -103,8 +104,8 @@ export default function Header() {
             <img
               src="/Logo_Pomocny_Tomek.webp"
               alt="Pomocny Tomek — logo"
-              width={200}
-              height={48}
+              width={IMG.logo.w}
+              height={IMG.logo.h}
               decoding="async"
               className="h-10 w-auto md:h-12 object-contain drop-shadow-sm"
             />

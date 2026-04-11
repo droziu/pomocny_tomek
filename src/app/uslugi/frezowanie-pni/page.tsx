@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import { CheckCircle2 } from "lucide-react";
 import CTAButton from "@/components/CTAButton";
+import { IMG } from "@/lib/imageAssets";
 import { pageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = pageMetadata("/uslugi/frezowanie-pni", {
@@ -9,8 +10,8 @@ export const metadata: Metadata = pageMetadata("/uslugi/frezowanie-pni", {
   description:
     "Frezowanie pni z wyceną indywidualną — grubość pnia, gatunek drzewa i dostęp do miejsca pracy. Jastrzębie-Zdrój, Cieszyn i okolice. Tel. 517 363 915.",
   ogImage: "/Frezarka_do_pni-przed-po.webp",
-  ogImageWidth: 1600,
-  ogImageHeight: 900,
+  ogImageWidth: 1200,
+  ogImageHeight: 805,
 });
 
 export default function FrezowaniePniPage() {
@@ -89,8 +90,8 @@ export default function FrezowaniePniPage() {
               <Image
                 src="/Frezarka_do_pni-przed-po.webp"
                 alt="Frezowanie pni — efekt przed i po usunięciu pnia"
-                width={1600}
-                height={900}
+                width={IMG.landscapePo.w}
+                height={IMG.landscapePo.h}
                 className="w-full h-auto"
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />

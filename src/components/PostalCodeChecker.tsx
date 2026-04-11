@@ -76,9 +76,9 @@ export default function PostalCodeChecker({ variant = "default" }: { variant?: V
                 <Map className="h-6 w-6" strokeWidth={1.8} />
               </div>
               <div>
-                <h3 className="text-base sm:text-lg font-bold text-text leading-tight">
+                <h2 className="text-base sm:text-lg font-bold text-text leading-tight">
                   Sprawdź, czy do Ciebie dojadę
-                </h3>
+                </h2>
                 <p className="text-sm text-text-light mt-0.5">
                   Wpisz kod pocztowy – od razu się dowiesz
                 </p>
@@ -140,10 +140,10 @@ export default function PostalCodeChecker({ variant = "default" }: { variant?: V
 
   return (
     <div className="rounded-2xl bg-white p-6 shadow-sm border border-cream-dark/30">
-      <h3 className="flex items-center gap-2 text-lg font-bold text-text mb-1">
-        <MapPin className="h-5 w-5 text-forest" />
+      <h2 className="flex items-center gap-2 text-lg font-bold text-text mb-1">
+        <MapPin className="h-5 w-5 text-forest" aria-hidden />
         Sprawdź, czy do Ciebie dojadę
-      </h3>
+      </h2>
       <p className="text-sm text-text-light mb-4">
         Wpisz swój kod pocztowy – od razu dowiesz się, czy świadczę usługi w Twojej okolicy.
       </p>

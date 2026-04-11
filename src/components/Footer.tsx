@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Phone, MapPin } from "lucide-react";
 import CookieSettingsTrigger from "@/components/CookieSettingsTrigger";
+import { IMG } from "@/lib/imageAssets";
 
 export default function Footer() {
   return (
@@ -15,8 +16,8 @@ export default function Footer() {
               <img
                 src="/Logo_Pomocny_Tomek.webp"
                 alt="Pomocny Tomek — logo"
-                width={200}
-                height={48}
+                width={IMG.logo.w}
+                height={IMG.logo.h}
                 decoding="async"
                 loading="lazy"
                 fetchPriority="low"
@@ -119,11 +120,14 @@ export default function Footer() {
         {/* Dolny pasek */}
         <div className="py-4 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-white/70">
           <p suppressHydrationWarning>&copy; {new Date().getFullYear()} Pomocny Tomek</p>
-          <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-1">
-            <Link href="/polityka-prywatnosci" className="text-white/80 hover:text-white underline-offset-2 hover:underline transition-colors">
+          <div className="flex flex-col sm:flex-row flex-wrap items-stretch sm:items-center justify-center gap-3 sm:gap-4 w-full sm:w-auto">
+            <Link
+              href="/polityka-prywatnosci"
+              className="inline-flex min-h-12 min-w-[48px] items-center justify-center rounded-lg px-4 py-3 text-sm text-white/90 hover:text-white underline-offset-2 hover:underline transition-colors text-center sm:text-left"
+            >
               Polityka prywatności i plików cookies
             </Link>
-            <CookieSettingsTrigger className="text-white/80 hover:text-white underline-offset-2 hover:underline transition-colors">
+            <CookieSettingsTrigger className="inline-flex min-h-12 min-w-[48px] items-center justify-center rounded-lg px-4 py-3 text-sm text-white/90 hover:text-white underline-offset-2 hover:underline transition-colors text-center sm:text-left">
               Zmień ustawienia cookies
             </CookieSettingsTrigger>
           </div>

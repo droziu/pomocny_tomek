@@ -2,12 +2,16 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import { CheckCircle2 } from "lucide-react";
 import CTAButton from "@/components/CTAButton";
+import { IMG } from "@/lib/imageAssets";
 import { pageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = pageMetadata("/uslugi/glebogryzarka", {
   title: "Glebogryzarka — spulchnianie ziemi pod ogród i trawnik",
   description:
     "Usługa glebogryzarką: spulchnianie ziemi pod trawnik, warzywnik i ogród. Jastrzębie-Zdrój, Cieszyn i okolice. Własny sprzęt. Tel. 517 363 915.",
+  ogImage: "/Glebogryzarka-przed-po.webp",
+  ogImageWidth: IMG.landscapePo.w,
+  ogImageHeight: IMG.landscapePo.h,
 });
 
 export default function GlebogryzarkaPage() {
@@ -88,8 +92,8 @@ export default function GlebogryzarkaPage() {
             <Image
               src="/Glebogryzarka-przed-po.webp"
               alt="Spulchnianie ziemi glebogryzarką — zdjęcie przed i po"
-              width={1600}
-              height={900}
+              width={IMG.landscapePo.w}
+              height={IMG.landscapePo.h}
               className="w-full h-auto"
               sizes="(max-width: 896px) 100vw, 896px"
             />
