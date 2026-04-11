@@ -13,8 +13,13 @@ export default function Footer() {
             <Link href="/" className="shrink-0">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="/Logo_1_2d2.png"
+                src="/Logo_Pomocny_Tomek.webp"
                 alt="Pomocny Tomek — logo"
+                width={200}
+                height={48}
+                decoding="async"
+                loading="lazy"
+                fetchPriority="low"
                 className="h-10 w-auto opacity-95 hover:opacity-100 transition-opacity object-contain object-left brightness-0 invert"
               />
             </Link>

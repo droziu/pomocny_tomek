@@ -84,7 +84,7 @@ export default function Home() {
                 <div className="mt-8 flex flex-col items-center border-t border-white/10 pt-8">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
-                    src="/Logo_1_2d2.png"
+                    src="/Logo_Pomocny_Tomek.webp"
                     alt="Pomocny Tomek — logo"
                     className="h-[4.25rem] w-auto max-w-[240px] object-contain opacity-95 brightness-0 invert sm:h-[4.75rem]"
                   />
@@ -158,7 +158,7 @@ export default function Home() {
                 fill
                 className="object-cover object-[center_35%] transition-transform duration-500 ease-out group-hover:scale-105"
                 sizes="(max-width: 1024px) 100vw, 50vw"
-                priority
+                loading="lazy"
               />
             </div>
 

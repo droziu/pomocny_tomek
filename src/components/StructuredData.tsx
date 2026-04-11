@@ -57,7 +57,7 @@ export default function StructuredData() {
       telephone: BUSINESS.phones,
       description:
         "Usługi przy drewnie i na działce: rąbanie drewna, rozdrabnianie gałęzi, oczyszczanie działek, glebogryzarka, frezowanie pni, wiercenie w ziemi, przycinka drzew. Obszar: Jastrzębie-Zdrój, Cieszyn i okolice.",
-      image: `${SITE_URL}/Logo_1_2d2.png`,
+      image: `${SITE_URL}/Logo_Pomocny_Tomek.webp`,
       priceRange: "$$",
       areaServed: [
         { "@type": "City", name: "Jastrzębie-Zdrój" },

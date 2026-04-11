@@ -8,3 +8,9 @@
 # Jeśli projekt jest w podfolderze repozytorium (np. monorepo),
 # ustaw base w Netlify UI: Build & deploy → Base directory
 # np. "pomocny_tomek" lub ścieżka do tego folderu
+
+# Dłuższy cache dla zasobów z hashem (Next) — szybsze powroty na stronę
+[[headers]]
+  for = "/_next/static/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"

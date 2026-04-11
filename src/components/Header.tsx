@@ -101,8 +101,11 @@ export default function Header() {
           <Link href="/" className="flex items-center shrink-0">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/Logo_1_2d2.png"
+              src="/Logo_Pomocny_Tomek.webp"
               alt="Pomocny Tomek — logo"
+              width={200}
+              height={48}
+              decoding="async"
               className="h-10 w-auto md:h-12 object-contain drop-shadow-sm"
             />
           </Link>
