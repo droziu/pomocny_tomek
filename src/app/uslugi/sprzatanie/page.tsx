@@ -42,7 +42,7 @@ export default function OczyszczanieDzialekPage() {
           </h1>
           <p className="text-lg md:text-xl text-white/80 leading-relaxed max-w-2xl mb-10">
             Jeśli działka albo teren są zarośnięte krzakami, samosiejkami albo po prostu wymagają
-            uporządkowania, przyjeżdżam własnym sprzętem i pomagam doprowadzić wszystko do porządku.
+            uporządkowania, przyjeżdżam z własnym sprzętem i pomagam doprowadzić wszystko do porządku.
             To dobra opcja wtedy, gdy trzeba oczyścić teren bez zamawiania dużej ekipy i bez
             niepotrzebnych kosztów.
           </p>

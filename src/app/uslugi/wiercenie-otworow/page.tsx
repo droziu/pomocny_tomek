@@ -61,7 +61,7 @@ export default function WiercenieOtworowPage() {
       <section className="py-20 md:py-28 bg-cream">
         <div className="mx-auto max-w-3xl px-4 sm:px-6">
           <p className="text-text-light leading-relaxed text-[15px] md:text-base mb-10">
-            Przyjeżdżam własnym sprzętem i wykonuję takie prace sprawnie oraz dokładnie. Usługa
+            Przyjeżdżam z własnym sprzętem i wykonuję takie prace sprawnie oraz dokładnie. Usługa
             sprawdza się zarówno przy przygotowaniu pod ogrodzenie, jak i przy sadzeniu drzewek czy
             innych pracach, gdzie potrzebne są konkretne otwory w ziemi.
           </p>

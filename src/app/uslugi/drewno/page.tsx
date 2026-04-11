@@ -36,7 +36,7 @@ export default function DrewnoPage() {
             Nie musisz męczyć się z tym samemu
           </h1>
           <p className="text-lg md:text-xl text-white/80 leading-relaxed max-w-2xl mb-10">
-            Przygotowanie drewna na opał to ciężka robota i strata czasu, jeśli nie ma się odpowiedniego sprzętu. Przyjeżdżam własną łuparką i robię to sprawnie, porządnie i bez niepotrzebnego zamieszania.
+            Samodzielne przygotowanie drewna na opał to ciężka praca i strata czasu, jeśli nie masz odpowiedniego sprzętu. Przyjeżdżam własną łuparką i robię to sprawnie, porządnie i bez niepotrzebnego zamieszania.
           </p>
           <CTAButton large />
         </div>
@@ -69,10 +69,10 @@ export default function DrewnoPage() {
                 Dobry sprzęt to krótsza robota i mniejszy koszt
               </h2>
               <p className="text-text-light leading-relaxed mb-5">
-                Nie pracuję siekierą ani wolnym sprzętem, przy którym wszystko ciągnie się godzinami. Używam szybkiej łuparki kinetycznej o nacisku 15 ton, dzięki czemu robota idzie sprawnie i bez zbędnego czekania.
+                Nie pracuję siekierą ani wolnym sprzętem, przy którym wszystko ciągnie się godzinami.
               </p>
               <p className="text-text-light leading-relaxed mb-8">
-                W praktyce oznacza to tyle, że robota idzie sprawniej, a Ty nie płacisz za „ciągnięcie” tematu godzinami.
+                Używam szybkiej łuparki kinetycznej o nacisku 15 ton. W praktyce oznacza to tyle, że robota idzie sprawniej, a Ty nie płacisz za „ciągnięcie” tematu godzinami.
               </p>
               <div className="rounded-xl bg-white p-5 border border-cream-dark/40">
                 <p className="text-sm font-semibold text-text mb-3">Jakie drewno mogę porąbać?</p>

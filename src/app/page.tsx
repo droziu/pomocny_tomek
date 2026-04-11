@@ -54,7 +54,7 @@ export default function Home() {
               <h1 className="text-balance text-3xl font-extrabold leading-[1.1] tracking-tight text-white sm:text-4xl md:text-5xl lg:text-[2.75rem] xl:text-6xl">
                 <span className="block sm:whitespace-nowrap">Pomocny Tomek</span>
                 <span className="mt-2 block text-[0.92em] font-bold text-white/95 md:mt-3">
-                  fachowa pomoc przy drewnie i na działce
+                  fachowa pomoc przy domu i na działce
                 </span>
               </h1>
               <p className="mx-auto mt-6 max-w-xl text-pretty text-base leading-relaxed text-white/75 md:text-lg lg:mx-0 lg:max-w-lg">
@@ -149,7 +149,7 @@ export default function Home() {
               Brakuje Ci czasu, siły albo sprzętu?
             </h2>
             <p className="text-text text-[17px] md:text-lg leading-relaxed max-w-2xl mx-auto">
-              Pomagam osobom, które chcą mieć zrobione porządnie, ale bez przepłacania za wielką firmę. Przyjeżdżam własnym sprzętem, robię co trzeba, sprzątam po sobie i rozliczam się uczciwie. Prosto i konkretnie.
+              Pomagam osobom, które chcą mieć zrobione porządnie, ale bez przepłacania za wielką firmę. Przyjeżdżam z własnym sprzętem, robię co trzeba, sprzątam po sobie i rozliczam się uczciwie. Prosto i konkretnie.
             </p>
           </div>
 
@@ -220,7 +220,7 @@ export default function Home() {
               href="/uslugi/sprzatanie"
               icon={Leaf}
               title="Oczyszczanie działek i terenu"
-              description="Usuwanie krzaków, samosiejek i wycinka krzewów. Porządek na działce własnym sprzętem i bez zbędnego komplikowania."
+              description="Usuwanie krzaków, samosiejek i wycinka krzewów. Porządek na działce z własnym sprzętem i bez zbędnego komplikowania."
             />
             <ServiceCard
               href="/uslugi/glebogryzarka"
@@ -238,7 +238,7 @@ export default function Home() {
               href="/uslugi/wiercenie-otworow"
               icon={Drill}
               title="Wiercenie otworów w ziemi"
-              description="Wiercenie otworów pod ogrodzenia, drzewka i inne prace w ziemi. Szybko, wygodnie i własnym sprzętem."
+              description="Wiercenie otworów pod ogrodzenia, drzewka i inne prace w ziemi. Szybko, wygodnie, z własnym sprzętem."
             />
             <ServiceCard
               href="/uslugi/przycinka-drzew"

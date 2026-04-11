@@ -28,11 +28,11 @@ export const viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: `${SITE_NAME} — usługi przy drewnie i na działce | Jastrzębie-Zdrój, Cieszyn`,
+    default: `${SITE_NAME} — usługi przy domu i na działce | Jastrzębie-Zdrój, Cieszyn`,
     template: `%s | ${SITE_NAME}`,
   },
   description:
-    "Pomocny Tomek — pomoc przy drewnie i na działce. Rąbanie drewna, rozdrabnianie gałęzi, oczyszczanie działek, glebogryzarka, frezowanie pni. Jastrzębie-Zdrój, Cieszyn i okolice. Tel. 517 363 915.",
+    "Pomocny Tomek — pomoc przy domu i na działce. Rąbanie drewna, rozdrabnianie gałęzi, oczyszczanie działek, glebogryzarka, frezowanie pni. Jastrzębie-Zdrój, Cieszyn i okolice. Tel. 517 363 915.",
   applicationName: SITE_NAME,
   referrer: "strict-origin-when-cross-origin",
   robots: { index: true, follow: true },
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     locale: DEFAULT_LOCALE,
     siteName: SITE_NAME,
     url: SITE_URL,
-    title: `${SITE_NAME} — usługi przy drewnie i na działce`,
+    title: `${SITE_NAME} — usługi przy domu i na działce`,
     description:
       "Rąbanie drewna, rozdrabnianie gałęzi, oczyszczanie działek i inne prace w terenie. Jastrzębie-Zdrój, Cieszyn i okolice.",
     images: [
@@ -49,13 +49,13 @@ export const metadata: Metadata = {
         url: "/Pomocny%20Tomek%20HERO.webp",
         width: IMG.heroPortrait.w,
         height: IMG.heroPortrait.h,
-        alt: `${SITE_NAME} — usługi przy drewnie i na działce`,
+        alt: `${SITE_NAME} — usługi przy domu i na działce`,
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: `${SITE_NAME} — usługi przy drewnie i na działce`,
+    title: `${SITE_NAME} — usługi przy domu i na działce`,
     description:
       "Rąbanie drewna, rozdrabnianie gałęzi, oczyszczanie działek. Jastrzębie-Zdrój, Cieszyn i okolice.",
     images: ["/Pomocny%20Tomek%20HERO.webp"],

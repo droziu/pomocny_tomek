@@ -37,7 +37,7 @@ export default function PrzycinkaDrzewPage() {
           </h1>
           <p className="text-lg md:text-xl text-white/80 leading-relaxed max-w-2xl mb-10">
             Zajmuję się przycinką mniejszych drzew oraz drzew owocowych. Jeśli drzewo wymaga
-            uporządkowania, ograniczenia rozrostu albo po prostu przycięcia, przyjeżdżam własnym
+            uporządkowania, ograniczenia rozrostu albo po prostu przycięcia, przyjeżdżam z własnym
             sprzętem i pomagam wykonać taką pracę bez zbędnego zamieszania.
           </p>
           <CTAButton large />
