@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     template: `%s | ${SITE_NAME}`,
   },
   description:
-    "Pomocny Tomek — pomoc przy domu i na działce. Rąbanie drewna, rozdrabnianie gałęzi, oczyszczanie działek, glebogryzarka, frezowanie pni. Jastrzębie-Zdrój, Cieszyn i okolice. Tel. 517 363 915.",
+    "Pomocny Tomek — pomoc przy domu i na działce. Rąbanie drewna, rozdrabnianie gałęzi, oczyszczanie działek, glebogryzarka, frezowanie pni. Jastrzębie-Zdrój, Cieszyn i okolice. Tel. 790 302 007.",
   applicationName: SITE_NAME,
   referrer: "strict-origin-when-cross-origin",
   robots: { index: true, follow: true },

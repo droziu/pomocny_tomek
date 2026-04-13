@@ -85,8 +85,8 @@ export default function PolitykaPrywatnosciPage() {
                 pomocnytom@gmail.com
               </a>{" "}
               lub telefonicznie:{" "}
-              <a href="tel:+48517363915" className="text-forest font-medium hover:underline">
-                517 363 915
+              <a href="tel:+48790302007" className="text-forest font-medium hover:underline">
+                790 302 007
               </a>.
             </p>
           </div>

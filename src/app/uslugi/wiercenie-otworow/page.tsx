@@ -6,7 +6,7 @@ import { pageMetadata } from "@/lib/seo";
 export const metadata: Metadata = pageMetadata("/uslugi/wiercenie-otworow", {
   title: "Wiercenie otworów w ziemi pod ogrodzenie i drzewka",
   description:
-    "Wiercenie otworów w ziemi pod ogrodzenie, sadzenie drzewek i inne prace — średnice 10, 20 i 30 cm. Jastrzębie-Zdrój, Cieszyn i okolice. Tel. 517 363 915.",
+    "Wiercenie otworów w ziemi pod ogrodzenie, sadzenie drzewek i inne prace — średnice 10, 20 i 30 cm. Jastrzębie-Zdrój, Cieszyn i okolice. Tel. 790 302 007.",
 });
 
 const zakres = [

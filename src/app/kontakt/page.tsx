@@ -7,7 +7,7 @@ import { pageMetadata } from "@/lib/seo";
 export const metadata: Metadata = pageMetadata("/kontakt", {
   title: "Kontakt i obszar działania",
   description:
-    "Kontakt do Pomocnego Tomka: 517 363 915, zapasowy 503 176 915, e-mail pomocnytom@gmail.com. Obsługa Jastrzębia-Zdroju, Cieszyna i okolic.",
+    "Kontakt do Pomocnego Tomka: 790 302 007 (główny), 517 363 915 (pomocniczy), e-mail pomocnytom@gmail.com. Obsługa Jastrzębia-Zdroju, Cieszyna i okolic.",
 });
 
 export default function KontaktPage() {
@@ -61,19 +61,19 @@ export default function KontaktPage() {
           </p>
           <div className="space-y-4 mb-8">
             <a
-              href="tel:+48517363915"
+              href="tel:+48790302007"
               className="flex items-center gap-4 rounded-2xl border border-cream-dark/50 bg-white p-6 transition-colors hover:border-forest/20 group"
             >
               <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-cta text-white">
                 <Phone className="h-5 w-5" />
               </span>
               <div>
-                <p className="text-sm text-text-light mb-0.5">Telefon</p>
-                <p className="text-xl font-bold text-text">517 363 915</p>
+                <p className="text-sm text-text-light mb-0.5">Telefon (główny)</p>
+                <p className="text-xl font-bold text-text">790 302 007</p>
               </div>
             </a>
             <a
-              href="tel:+48503176915"
+              href="tel:+48517363915"
               className="flex items-center gap-4 rounded-2xl border border-cream-dark/50 bg-white p-6 transition-colors hover:border-forest/20 group"
             >
               <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-cream-dark/70 text-text">
@@ -83,7 +83,7 @@ export default function KontaktPage() {
                 <p className="text-sm text-text-light mb-2 leading-relaxed">
                   Jeśli nie odbieram telefonu - możesz spróbować zadzwonić tutaj
                 </p>
-                <p className="text-xl font-bold text-text">503 176 915</p>
+                <p className="text-xl font-bold text-text">517 363 915</p>
               </div>
             </a>
             <a

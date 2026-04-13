@@ -26,7 +26,7 @@ export const metadata: Metadata = pageMetadata("/", {
   title:
     "Pomocny Tomek — rąbanie drewna, oczyszczanie działek i prace w terenie | Jastrzębie-Zdrój, Cieszyn",
   description:
-    "Pomocny Tomek: rąbanie i łupanie drewna na opał, rozdrabnianie gałęzi rębakiem, oczyszczanie działek i terenu, glebogryzarka, frezowanie pni, wiercenie w ziemi, przycinka drzew. Jastrzębie-Zdrój, Cieszyn i okolice. Tel. 517 363 915.",
+    "Pomocny Tomek: rąbanie i łupanie drewna na opał, rozdrabnianie gałęzi rębakiem, oczyszczanie działek i terenu, glebogryzarka, frezowanie pni, wiercenie w ziemi, przycinka drzew. Jastrzębie-Zdrój, Cieszyn i okolice. Tel. 790 302 007.",
 });
 
 export default function Home() {

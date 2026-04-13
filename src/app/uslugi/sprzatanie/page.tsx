@@ -8,7 +8,7 @@ import { pageMetadata } from "@/lib/seo";
 export const metadata: Metadata = pageMetadata("/uslugi/sprzatanie", {
   title: "Oczyszczanie działek, usuwanie krzaków i samosiejek",
   description:
-    "Oczyszczanie działek i terenu: usuwanie krzaków i samosiejek, wycinka krzewów, porządkowanie zaniedbanego terenu. Jastrzębie-Zdrój, Cieszyn i okolice. Tel. 517 363 915.",
+    "Oczyszczanie działek i terenu: usuwanie krzaków i samosiejek, wycinka krzewów, porządkowanie zaniedbanego terenu. Jastrzębie-Zdrój, Cieszyn i okolice. Tel. 790 302 007.",
   ogImage: "/gleba1.webp",
   ogImageWidth: IMG.gleba.w,
   ogImageHeight: IMG.gleba.h,

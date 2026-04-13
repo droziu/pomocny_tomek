@@ -8,7 +8,7 @@ import { pageMetadata } from "@/lib/seo";
 export const metadata: Metadata = pageMetadata("/uslugi/glebogryzarka", {
   title: "Glebogryzarka — spulchnianie ziemi pod ogród i trawnik",
   description:
-    "Usługa glebogryzarką: spulchnianie ziemi pod trawnik, warzywnik i ogród. Jastrzębie-Zdrój, Cieszyn i okolice. Własny sprzęt. Tel. 517 363 915.",
+    "Usługa glebogryzarką: spulchnianie ziemi pod trawnik, warzywnik i ogród. Jastrzębie-Zdrój, Cieszyn i okolice. Własny sprzęt. Tel. 790 302 007.",
   ogImage: "/Glebogryzarka-przed-po.webp",
   ogImageWidth: IMG.landscapePo.w,
   ogImageHeight: IMG.landscapePo.h,

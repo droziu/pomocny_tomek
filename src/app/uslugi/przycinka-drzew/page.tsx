@@ -6,7 +6,7 @@ import { pageMetadata } from "@/lib/seo";
 export const metadata: Metadata = pageMetadata("/uslugi/przycinka-drzew", {
   title: "Przycinka drzew owocowych i mniejszych drzew",
   description:
-    "Przycinka drzew owocowych i mniejszych drzew oraz pomoc przy prostszych pracach ze ścinką. Jastrzębie-Zdrój, Cieszyn i okolice. Tel. 517 363 915.",
+    "Przycinka drzew owocowych i mniejszych drzew oraz pomoc przy prostszych pracach ze ścinką. Jastrzębie-Zdrój, Cieszyn i okolice. Tel. 790 302 007.",
 });
 
 const zakres = [

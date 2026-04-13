@@ -101,11 +101,11 @@ export default function Footer() {
 
             {/* CTA - telefon */}
             <a
-              href="tel:+48517363915"
+              href="tel:+48790302007"
               className="inline-flex items-center gap-3 rounded-2xl bg-cta px-5 py-3 text-white font-bold hover:bg-cta-hover transition-colors shrink-0"
             >
               <Phone className="h-5 w-5" />
-              517 363 915
+              790 302 007
             </a>
           </div>
 

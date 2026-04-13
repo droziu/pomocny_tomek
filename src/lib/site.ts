@@ -11,7 +11,7 @@ export const DEFAULT_LOCALE = "pl_PL";
 
 export const BUSINESS = {
   name: SITE_NAME,
-  phones: ["+48517363915", "+48503176915"],
+  phones: ["+48790302007", "+48517363915"],
   email: "pomocnytom@gmail.com",
   areaLabel: "Jastrzębie-Zdrój, Cieszyn i okolice",
 } as const;

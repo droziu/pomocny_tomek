@@ -8,7 +8,7 @@ import { pageMetadata } from "@/lib/seo";
 export const metadata: Metadata = pageMetadata("/uslugi/frezowanie-pni", {
   title: "Frezowanie pni i usuwanie pni po wycince",
   description:
-    "Frezowanie pni z wyceną indywidualną — grubość pnia, gatunek drzewa i dostęp do miejsca pracy. Jastrzębie-Zdrój, Cieszyn i okolice. Tel. 517 363 915.",
+    "Frezowanie pni z wyceną indywidualną — grubość pnia, gatunek drzewa i dostęp do miejsca pracy. Jastrzębie-Zdrój, Cieszyn i okolice. Tel. 790 302 007.",
   ogImage: "/Frezarka_do_pni-przed-po.webp",
   ogImageWidth: 1200,
   ogImageHeight: 805,

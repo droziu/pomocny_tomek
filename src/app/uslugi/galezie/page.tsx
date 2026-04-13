@@ -8,7 +8,7 @@ import { pageMetadata } from "@/lib/seo";
 export const metadata: Metadata = pageMetadata("/uslugi/galezie", {
   title: "Rozdrabnianie gałęzi rębakiem po przycince",
   description:
-    "Rozdrabnianie gałęzi własnym rębakiem — gałęzie do ok. 12 cm. Usługa w Jastrzębiu-Zdroju, Cieszynie i okolicach. Mniej wywozu, porządek na działce. Tel. 517 363 915.",
+    "Rozdrabnianie gałęzi własnym rębakiem — gałęzie do ok. 12 cm. Usługa w Jastrzębiu-Zdroju, Cieszynie i okolicach. Mniej wywozu, porządek na działce. Tel. 790 302 007.",
   ogImage: "/Przycinanie_galezi_przed-po.webp",
   ogImageWidth: IMG.landscapePo.w,
   ogImageHeight: IMG.landscapePo.h,

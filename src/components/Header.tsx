@@ -177,11 +177,11 @@ export default function Header() {
             </div>
 
             <a
-              href="tel:+48517363915"
+              href="tel:+48790302007"
               className="ml-3 inline-flex items-center gap-2 rounded-full bg-cta px-5 py-2.5 text-sm font-semibold text-white shadow-md hover:bg-cta-hover hover:shadow-lg active:scale-[0.97] transition-all duration-200"
             >
               <Phone className="h-4 w-4" />
-              517 363 915
+              790 302 007
             </a>
           </nav>
 
@@ -316,11 +316,11 @@ export default function Header() {
               }}
             >
               <a
-                href="tel:+48517363915"
+                href="tel:+48790302007"
                 className="flex items-center justify-center gap-2.5 rounded-2xl bg-cta px-6 py-4 text-lg font-bold text-white shadow-lg hover:bg-cta-hover active:scale-[0.98] transition-all duration-200"
               >
                 <Phone className="h-5 w-5" />
-                Zadzwoń: 517 363 915
+                Zadzwoń: 790 302 007
               </a>
             </div>
           </nav>
