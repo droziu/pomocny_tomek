@@ -26,7 +26,7 @@ const services = [
   { href: "/uslugi/galezie", label: "Rozdrabnianie gałęzi", icon: TreeDeciduous },
   { href: "/uslugi/sprzatanie", label: "Oczyszczanie działek", icon: Leaf },
   { href: "/uslugi/glebogryzarka", label: "Glebogryzarka", icon: Tractor },
-  { href: "/uslugi/frezowanie-pni", label: "Frezowanie pni", icon: Trees },
+  { href: "/uslugi/frezowanie-pni", label: "Frezowanie pni i korzenie", icon: Trees },
   { href: "/uslugi/wiercenie-otworow", label: "Wiercenie otworów", icon: Drill },
   { href: "/uslugi/przycinka-drzew", label: "Przycinka drzew", icon: Scissors },
 ];
@@ -103,7 +103,7 @@ export default function Header() {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/Logo_Pomocny_Tomek.webp"
-              alt="Pomocny Tomek — logo"
+              alt="Pomocny Tomek - logo"
               width={IMG.logo.w}
               height={IMG.logo.h}
               decoding="async"

@@ -48,7 +48,7 @@ export function pageMetadata(
           url: ogImagePath,
           width: ogW,
           height: ogH,
-          alt: `${SITE_NAME} — usługi przy domu i na działce`,
+          alt: `${SITE_NAME} - usługi przy domu i na działce`,
         },
       ],
     },

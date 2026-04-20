@@ -5,13 +5,13 @@ const services = [
     path: "/uslugi/drewno",
     name: "Rąbanie i łupanie drewna na opał",
     description:
-      "Mobilna łuparka kinetyczna — szybkie rąbanie drewna na opał w Jastrzębiu-Zdroju, Cieszynie i okolicach.",
+      "Mobilna łuparka kinetyczna - szybkie rąbanie drewna na opał w Jastrzębiu-Zdroju, Cieszynie i okolicach.",
   },
   {
     path: "/uslugi/galezie",
     name: "Rozdrabnianie gałęzi",
     description:
-      "Rozdrabnianie gałęzi po przycince własnym rębakiem — porządek na działce bez wywozu.",
+      "Rozdrabnianie gałęzi po przycince własnym rębakiem - porządek na działce bez wywozu.",
   },
   {
     path: "/uslugi/sprzatanie",
@@ -23,18 +23,19 @@ const services = [
     path: "/uslugi/glebogryzarka",
     name: "Spulchnianie ziemi glebogryzarką",
     description:
-      "Usługa glebogryzarką — spulchnianie ziemi pod trawnik, ogród i warzywniak.",
+      "Usługa glebogryzarką - spulchnianie ziemi pod trawnik, ogród i warzywniak.",
   },
   {
     path: "/uslugi/frezowanie-pni",
-    name: "Frezowanie pni",
-    description: "Usuwanie pni po wycince — wycena indywidualna pod rodzaj pnia i dostęp.",
+    name: "Frezowanie pni i usuwanie korzeni",
+    description:
+      "Usuwanie pni po wycince oraz korzeni - wycena indywidualna pod rodzaj pnia, dostęp i warunki na miejscu.",
   },
   {
     path: "/uslugi/wiercenie-otworow",
     name: "Wiercenie otworów w ziemi",
     description:
-      "Wiercenie otworów pod ogrodzenie, drzewka i inne prace w ziemi — średnice 10–30 cm.",
+      "Wiercenie otworów pod ogrodzenie, drzewka i inne prace w ziemi - średnice 10–30 cm.",
   },
   {
     path: "/uslugi/przycinka-drzew",

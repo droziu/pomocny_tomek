@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import {
   Axe,
-  Leaf,
   Tractor,
   TreeDeciduous,
   Wrench,
@@ -24,7 +23,7 @@ import { pageMetadata } from "@/lib/seo";
 export const metadata: Metadata = pageMetadata("/", {
   absoluteTitle: true,
   title:
-    "Pomocny Tomek — rąbanie drewna, oczyszczanie działek i prace w terenie | Jastrzębie-Zdrój, Cieszyn",
+    "Pomocny Tomek - rąbanie drewna, oczyszczanie działek i prace w terenie | Jastrzębie-Zdrój, Cieszyn",
   description:
     "Pomocny Tomek: rąbanie i łupanie drewna na opał, rozdrabnianie gałęzi rębakiem, oczyszczanie działek i terenu, glebogryzarka, frezowanie pni, wiercenie w ziemi, przycinka drzew. Jastrzębie-Zdrój, Cieszyn i okolice. Tel. 790 302 007.",
 });
@@ -74,7 +73,7 @@ export default function Home() {
                   />
                   <Image
                     src="/Pomocny%20Tomek%20HERO.webp"
-                    alt="Pomocny Tomek — zdjęcie profilowe przy pracy terenowej"
+                      alt="Pomocny Tomek - zdjęcie profilowe przy pracy terenowej"
                     width={220}
                     height={220}
                     className="relative z-10 h-[200px] w-[200px] rounded-full object-cover object-[center_22%] shadow-[0_12px_40px_rgba(0,0,0,0.35)] ring-[1.5px] ring-white/25 sm:h-[220px] sm:w-[220px]"
@@ -86,7 +85,7 @@ export default function Home() {
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     src="/Logo_Pomocny_Tomek.webp"
-                    alt="Pomocny Tomek — logo"
+                    alt="Pomocny Tomek - logo"
                     width={IMG.logo.w}
                     height={IMG.logo.h}
                     decoding="async"
@@ -217,12 +216,6 @@ export default function Home() {
               description="Rozdrabniam gałęzie własnym rębakiem, więc wszystko idzie sprawnie i bez kombinowania ze sprzętem."
             />
             <ServiceCard
-              href="/uslugi/sprzatanie"
-              icon={Leaf}
-              title="Oczyszczanie działek i terenu"
-              description="Usuwanie krzaków, samosiejek i wycinka krzewów. Porządek na działce z własnym sprzętem i bez zbędnego komplikowania."
-            />
-            <ServiceCard
               href="/uslugi/glebogryzarka"
               icon={Tractor}
               title="Spulchnianie ziemi"
@@ -231,8 +224,8 @@ export default function Home() {
             <ServiceCard
               href="/uslugi/frezowanie-pni"
               icon={Trees}
-              title="Frezowanie pni"
-              description="Usuwanie pni po wycince. Wycena indywidualna – zależy od pnia i warunków na miejscu."
+              title="Frezowanie pni i usuwanie korzeni"
+              description="Usuwanie pni po wycince oraz korzeni. Wycena indywidualna - zależy od pnia i warunków na miejscu."
             />
             <ServiceCard
               href="/uslugi/wiercenie-otworow"

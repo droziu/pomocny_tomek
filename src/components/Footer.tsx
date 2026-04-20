@@ -15,7 +15,7 @@ export default function Footer() {
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/Logo_Pomocny_Tomek.webp"
-                alt="Pomocny Tomek — logo"
+                alt="Pomocny Tomek - logo"
                 width={IMG.logo.w}
                 height={IMG.logo.h}
                 decoding="async"
@@ -36,14 +36,14 @@ export default function Footer() {
               </Link>
               <Link
                 href="/uslugi/drewno"
-                title="Rąbanie i łupanie drewna — Jastrzębie-Zdrój, Cieszyn"
+                title="Rąbanie i łupanie drewna - Jastrzębie-Zdrój, Cieszyn"
                 className="text-sm text-white/90 hover:text-white transition-colors py-1"
               >
                 Rąbanie drewna
               </Link>
               <Link
                 href="/uslugi/galezie"
-                title="Rozdrabnianie gałęzi rębakiem — usługa mobilna"
+                title="Rozdrabnianie gałęzi rębakiem - usługa mobilna"
                 className="text-sm text-white/90 hover:text-white transition-colors py-1"
               >
                 Rozdrabnianie gałęzi
@@ -64,10 +64,10 @@ export default function Footer() {
               </Link>
               <Link
                 href="/uslugi/frezowanie-pni"
-                title="Frezowanie i usuwanie pni"
+                title="Frezowanie pni i usuwanie korzeni"
                 className="text-sm text-white/90 hover:text-white transition-colors py-1"
               >
-                Frezowanie pni
+                Frezowanie pni i korzenie
               </Link>
               <Link
                 href="/uslugi/wiercenie-otworow"

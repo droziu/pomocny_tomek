@@ -9,13 +9,13 @@
 # ustaw base w Netlify UI: Build & deploy → Base directory
 # np. "pomocny_tomek" lub ścieżka do tego folderu
 
-# Dłuższy cache dla zasobów z hashem (Next) — szybsze powroty na stronę
+# Dłuższy cache dla zasobów z hashem (Next) - szybsze powroty na stronę
 [[headers]]
   for = "/_next/static/*"
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
 
-# Grafiki w katalogu głównym (bez hasha w nazwie) — krótszy cache + odświeżenie w tle
+# Grafiki w katalogu głównym (bez hasha w nazwie) - krótszy cache + odświeżenie w tle
 [[headers]]
   for = "/*.webp"
   [headers.values]

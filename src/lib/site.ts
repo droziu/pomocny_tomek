@@ -1,5 +1,5 @@
 /**
- * Kanoniczny adres produkcji (Netlify / hosting). Ustaw NEXT_PUBLIC_SITE_URL w panelu lub .env — bez końcowego slasha.
+ * Kanoniczny adres produkcji (Netlify / hosting). Ustaw NEXT_PUBLIC_SITE_URL w panelu lub .env - bez końcowego slasha.
  */
 export const SITE_URL = (
   process.env.NEXT_PUBLIC_SITE_URL ?? "https://pomocnytomek.pl"

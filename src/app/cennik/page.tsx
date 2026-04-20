@@ -4,7 +4,7 @@ import CTAButton from "@/components/CTAButton";
 import { pageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = pageMetadata("/cennik", {
-  title: "Cennik usług — rąbanie drewna, glebogryzarka, działka",
+  title: "Cennik usług - rąbanie drewna, glebogryzarka, działka",
   description:
     "Orientacyjny cennik Pomocnego Tomka: prace z łuparką, rębakiem, glebogryzarką i innym sprzętem. Od 350 zł za pierwsze 2 h z dojazdem. Jastrzębie-Zdrój, Cieszyn i okolice. Tel. 790 302 007.",
 });

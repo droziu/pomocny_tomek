@@ -8,7 +8,7 @@ import { pageMetadata } from "@/lib/seo";
 export const metadata: Metadata = pageMetadata("/uslugi/galezie", {
   title: "Rozdrabnianie gałęzi rębakiem po przycince",
   description:
-    "Rozdrabnianie gałęzi własnym rębakiem — gałęzie do ok. 12 cm. Usługa w Jastrzębiu-Zdroju, Cieszynie i okolicach. Mniej wywozu, porządek na działce. Tel. 790 302 007.",
+    "Rozdrabnianie gałęzi własnym rębakiem - gałęzie do ok. 12 cm. Usługa w Jastrzębiu-Zdroju, Cieszynie i okolicach. Mniej wywozu, porządek na działce. Tel. 790 302 007.",
   ogImage: "/Przycinanie_galezi_przed-po.webp",
   ogImageWidth: IMG.landscapePo.w,
   ogImageHeight: IMG.landscapePo.h,
@@ -80,7 +80,7 @@ export default function GaleziePage() {
           <figure className="rounded-2xl overflow-hidden bg-white shadow-sm border border-cream-dark/30">
             <Image
               src="/Przycinanie_galezi_przed-po.webp"
-              alt="Rozdrabnianie gałęzi — porównanie przed i po na działce"
+                alt="Rozdrabnianie gałęzi - porównanie przed i po na działce"
               width={IMG.landscapePo.w}
               height={IMG.landscapePo.h}
               className="w-full h-auto"
@@ -130,7 +130,7 @@ export default function GaleziePage() {
         </div>
       </section>
 
-      {/* SEKCJA 3: PRZYKŁADOWE REALIZACJE — rytm pionowy: padding sekcji = odstępy między blokami */}
+      {/* SEKCJA 3: PRZYKŁADOWE REALIZACJE - rytm pionowy: padding sekcji = odstępy między blokami */}
       <section className="bg-cream">
         <div className="mx-auto max-w-5xl px-4 sm:px-6 flex flex-col gap-20 md:gap-28 py-20 md:py-28">
           <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_min(360px,100%)] lg:items-center lg:gap-10">
@@ -201,7 +201,7 @@ export default function GaleziePage() {
             <div className="group relative aspect-[4/3] rounded-2xl overflow-hidden shadow-sm border border-cream-dark/30">
               <Image
                 src="/galezie_2.webp"
-                alt="Zrębki po rozdrabnianiu gałęzi — efekt pracy rębakiem"
+                alt="Zrębki po rozdrabnianiu gałęzi - efekt pracy rębakiem"
                 fill
                 className="object-cover object-center transition-transform duration-500 ease-out group-hover:scale-105"
                 sizes="(max-width: 640px) 100vw, 50vw"

@@ -8,7 +8,7 @@ import { pageMetadata } from "@/lib/seo";
 export const metadata: Metadata = pageMetadata("/uslugi/drewno", {
   title: "Rąbanie i łupanie drewna na opał",
   description:
-    "Łupanie i rąbanie drewna łuparką kinetyczną 15 t — mobilna usługa w Jastrzębiu-Zdroju, Cieszynie i okolicach. Spalinowa, bez prądu, możliwość pracy przy gorszej pogodzie. Tel. 790 302 007.",
+    "Łupanie i rąbanie drewna łuparką kinetyczną 15 t - mobilna usługa w Jastrzębiu-Zdroju, Cieszynie i okolicach. Spalinowa, bez prądu, możliwość pracy przy gorszej pogodzie. Tel. 790 302 007.",
   ogImage: "/luparka-przed-po.webp",
   ogImageWidth: IMG.landscapePo.w,
   ogImageHeight: IMG.landscapePo.h,
@@ -89,7 +89,7 @@ export default function DrewnoPage() {
             <div className="group relative aspect-square lg:aspect-[3/4] rounded-2xl overflow-hidden shadow-sm">
               <Image
                 src="/drewno_1.webp"
-                alt="Łuparka kinetyczna przy rąbaniu drewna na opał — usługa w Jastrzębiu-Zdroju i okolicach"
+                alt="Łuparka kinetyczna przy rąbaniu drewna na opał - usługa w Jastrzębiu-Zdroju i okolicach"
                 fill
                 className="object-cover object-[center_55%] transition-transform duration-500 ease-out group-hover:scale-105"
                 sizes="(max-width: 1024px) 100vw, 50vw"
@@ -136,10 +136,10 @@ export default function DrewnoPage() {
         </div>
       </section>
 
-      {/* SEKCJA 3: ZDJĘCIA Z PRACY — rytm pionowy: padding sekcji = odstępy między blokami */}
+      {/* SEKCJA 3: ZDJĘCIA Z PRACY - rytm pionowy: padding sekcji = odstępy między blokami */}
       <section className="bg-cream">
         <div className="mx-auto max-w-5xl px-4 sm:px-6 flex flex-col gap-20 md:gap-28 py-20 md:py-28">
-          {/* lg+: tekst | film; poniżej lg: stack — stała szerokość kolumny z filmem (auto + w-full zawalało siatkę) */}
+          {/* lg+: tekst | film; poniżej lg: stack - stała szerokość kolumny z filmem (auto + w-full zawalało siatkę) */}
           <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_min(360px,100%)] lg:items-center lg:gap-10">
             <div className="min-w-0 text-center lg:text-left">
               <h2 className="text-2xl sm:text-3xl font-bold text-text tracking-tight">
@@ -199,7 +199,7 @@ export default function DrewnoPage() {
             <div className="group relative aspect-[4/3] rounded-2xl overflow-hidden shadow-sm">
               <Image
                 src="/drewno_1.webp"
-                alt="Praca przy rąbaniu drewna na działce — porąbane polana"
+                alt="Praca przy rąbaniu drewna na działce - porąbane polana"
                 fill
                 className="object-cover object-[center_55%] transition-transform duration-500 ease-out group-hover:scale-105"
                 sizes="(max-width: 640px) 100vw, 50vw"
@@ -208,7 +208,7 @@ export default function DrewnoPage() {
             <div className="group relative aspect-[4/3] rounded-2xl overflow-hidden shadow-sm">
               <Image
                 src="/drewno_2.webp"
-                alt="Porąbane drewno na opał — efekt pracy łuparką"
+                alt="Porąbane drewno na opał - efekt pracy łuparką"
                 fill
                 className="object-cover object-center transition-transform duration-500 ease-out group-hover:scale-105"
                 sizes="(max-width: 640px) 100vw, 50vw"
@@ -220,7 +220,7 @@ export default function DrewnoPage() {
             <figure className="rounded-2xl overflow-hidden bg-white shadow-sm border border-cream-dark/30">
               <Image
                 src="/luparka-przed-po.webp"
-                alt="Łupanie drewna — zdjęcie przed i po z pracy łuparką"
+                alt="Łupanie drewna - zdjęcie przed i po z pracy łuparką"
                 width={IMG.landscapePo.w}
                 height={IMG.landscapePo.h}
                 className="w-full h-auto"

@@ -6,7 +6,7 @@ import { IMG } from "@/lib/imageAssets";
 import { pageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = pageMetadata("/uslugi/glebogryzarka", {
-  title: "Glebogryzarka — spulchnianie ziemi pod ogród i trawnik",
+  title: "Glebogryzarka - spulchnianie ziemi pod ogród i trawnik",
   description:
     "Usługa glebogryzarką: spulchnianie ziemi pod trawnik, warzywnik i ogród. Jastrzębie-Zdrój, Cieszyn i okolice. Własny sprzęt. Tel. 790 302 007.",
   ogImage: "/Glebogryzarka-przed-po.webp",
@@ -91,7 +91,7 @@ export default function GlebogryzarkaPage() {
           <figure className="rounded-2xl overflow-hidden bg-white shadow-sm border border-cream-dark/30">
             <Image
               src="/Glebogryzarka-przed-po.webp"
-              alt="Spulchnianie ziemi glebogryzarką — zdjęcie przed i po"
+              alt="Spulchnianie ziemi glebogryzarką - zdjęcie przed i po"
               width={IMG.landscapePo.w}
               height={IMG.landscapePo.h}
               className="w-full h-auto"

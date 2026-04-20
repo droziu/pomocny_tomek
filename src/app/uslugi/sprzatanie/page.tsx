@@ -108,7 +108,7 @@ export default function OczyszczanieDzialekPage() {
             <div className="rounded-2xl overflow-hidden bg-white shadow-sm">
               <Image
                 src="/gleba1.webp"
-                alt="Oczyszczanie działki — przykład prac w terenie"
+                alt="Oczyszczanie działki - przykład prac w terenie"
                 width={IMG.gleba.w}
                 height={IMG.gleba.h}
                 className="w-full aspect-[4/3] object-cover"
@@ -118,7 +118,7 @@ export default function OczyszczanieDzialekPage() {
             <div className="rounded-2xl overflow-hidden bg-white shadow-sm">
               <Image
                 src="/gleba2.webp"
-                alt="Oczyszczanie terenu — efekt po pracach"
+                alt="Oczyszczanie terenu - efekt po pracach"
                 width={IMG.gleba.w}
                 height={IMG.gleba.h}
                 className="w-full aspect-[4/3] object-cover"
