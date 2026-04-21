@@ -24,7 +24,7 @@ import { IMG } from "@/lib/imageAssets";
 const services = [
   { href: "/uslugi/drewno", label: "Rąbanie drewna", icon: Axe },
   { href: "/uslugi/galezie", label: "Rozdrabnianie gałęzi", icon: TreeDeciduous },
-  { href: "/uslugi/sprzatanie", label: "Oczyszczanie działek", icon: Leaf },
+  { href: "/uslugi/sprzatanie", label: "Karczowanie i oczyszczanie", icon: Leaf },
   { href: "/uslugi/glebogryzarka", label: "Glebogryzarka", icon: Tractor },
   { href: "/uslugi/frezowanie-pni", label: "Frezowanie pni i korzenie", icon: Trees },
   { href: "/uslugi/wiercenie-otworow", label: "Wiercenie otworów", icon: Drill },

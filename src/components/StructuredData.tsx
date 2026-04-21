@@ -15,9 +15,9 @@ const services = [
   },
   {
     path: "/uslugi/sprzatanie",
-    name: "Oczyszczanie działek i terenu",
+    name: "Karczowanie i oczyszczanie terenu",
     description:
-      "Oczyszczanie działek z krzaków i samosiejek, wycinka krzewów, porządkowanie terenu.",
+      "Karczowanie i oczyszczanie terenu: krzaki i samosiejki, wycinka krzewów, porządkowanie terenu.",
   },
   {
     path: "/uslugi/glebogryzarka",
@@ -57,7 +57,7 @@ export default function StructuredData() {
       email: BUSINESS.email,
       telephone: BUSINESS.phones,
       description:
-        "Usługi przy domu i na działce: rąbanie drewna, rozdrabnianie gałęzi, oczyszczanie działek, glebogryzarka, frezowanie pni, wiercenie w ziemi, przycinka drzew. Obszar: Jastrzębie-Zdrój, Cieszyn i okolice.",
+        "Usługi przy domu i na działce: rąbanie drewna, rozdrabnianie gałęzi, karczowanie i oczyszczanie terenu, glebogryzarka, frezowanie pni, wiercenie w ziemi, przycinka drzew. Obszar: Jastrzębie-Zdrój, Cieszyn i okolice.",
       image: `${SITE_URL}/Logo_Pomocny_Tomek.webp`,
       priceRange: "$$",
       areaServed: [

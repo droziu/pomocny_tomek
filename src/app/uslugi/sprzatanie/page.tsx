@@ -6,9 +6,9 @@ import { IMG } from "@/lib/imageAssets";
 import { pageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = pageMetadata("/uslugi/sprzatanie", {
-  title: "Oczyszczanie działek, usuwanie krzaków i samosiejek",
+  title: "Karczowanie i oczyszczanie terenu (krzaki, samosiejki)",
   description:
-    "Oczyszczanie działek i terenu: usuwanie krzaków i samosiejek, wycinka krzewów, porządkowanie zaniedbanego terenu. Jastrzębie-Zdrój, Cieszyn i okolice. Tel. 790 302 007.",
+    "Karczowanie i oczyszczanie terenu: usuwanie krzaków i samosiejek, wycinka krzewów, porządkowanie zaniedbanego terenu. Jastrzębie-Zdrój, Cieszyn i okolice. Tel. 790 302 007.",
   ogImage: "/gleba1.webp",
   ogImageWidth: IMG.gleba.w,
   ogImageHeight: IMG.gleba.h,
@@ -38,7 +38,7 @@ export default function OczyszczanieDzialekPage() {
 
         <div className="relative mx-auto max-w-4xl px-4 sm:px-6 pt-28 pb-20 md:pt-32 md:pb-24">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white leading-[1.12] tracking-tight mb-6">
-            Oczyszczanie działek i terenu
+            Karczowanie i oczyszczanie terenu
           </h1>
           <p className="text-lg md:text-xl text-white/80 leading-relaxed max-w-2xl mb-10">
             Jeśli działka albo teren są zarośnięte krzakami, samosiejkami albo po prostu wymagają

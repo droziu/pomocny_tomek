@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     template: `%s | ${SITE_NAME}`,
   },
   description:
-    "Pomocny Tomek - pomoc przy domu i na działce. Rąbanie drewna, rozdrabnianie gałęzi, oczyszczanie działek, glebogryzarka, frezowanie pni. Jastrzębie-Zdrój, Cieszyn i okolice. Tel. 790 302 007.",
+    "Pomocny Tomek - pomoc przy domu i na działce. Rąbanie drewna, rozdrabnianie gałęzi, frezowanie pni, karczowanie i oczyszczanie terenu, glebogryzarka. Jastrzębie-Zdrój, Cieszyn i okolice. Tel. 790 302 007.",
   applicationName: SITE_NAME,
   referrer: "strict-origin-when-cross-origin",
   robots: { index: true, follow: true },
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     url: SITE_URL,
     title: `${SITE_NAME} - usługi przy domu i na działce`,
     description:
-      "Rąbanie drewna, rozdrabnianie gałęzi, oczyszczanie działek i inne prace w terenie. Jastrzębie-Zdrój, Cieszyn i okolice.",
+      "Rąbanie drewna, rozdrabnianie gałęzi, frezowanie pni, karczowanie i inne prace w terenie. Jastrzębie-Zdrój, Cieszyn i okolice.",
     images: [
       {
         url: "/Pomocny%20Tomek%20HERO.webp",
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: `${SITE_NAME} - usługi przy domu i na działce`,
     description:
-      "Rąbanie drewna, rozdrabnianie gałęzi, oczyszczanie działek. Jastrzębie-Zdrój, Cieszyn i okolice.",
+      "Rąbanie drewna, rozdrabnianie gałęzi, frezowanie pni, karczowanie. Jastrzębie-Zdrój, Cieszyn i okolice.",
     images: ["/Pomocny%20Tomek%20HERO.webp"],
   },
   formatDetection: {

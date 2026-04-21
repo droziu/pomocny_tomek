@@ -50,10 +50,10 @@ export default function Footer() {
               </Link>
               <Link
                 href="/uslugi/sprzatanie"
-                title="Oczyszczanie działek i terenu"
+                title="Karczowanie i oczyszczanie terenu"
                 className="text-sm text-white/90 hover:text-white transition-colors py-1"
               >
-                Oczyszczanie działek
+                Karczowanie i oczyszczanie
               </Link>
               <Link
                 href="/uslugi/glebogryzarka"

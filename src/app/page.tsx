@@ -23,9 +23,9 @@ import { pageMetadata } from "@/lib/seo";
 export const metadata: Metadata = pageMetadata("/", {
   absoluteTitle: true,
   title:
-    "Pomocny Tomek - rąbanie drewna, oczyszczanie działek i prace w terenie | Jastrzębie-Zdrój, Cieszyn",
+    "Pomocny Tomek - rąbanie drewna, frezowanie pni, karczowanie i prace w terenie | Jastrzębie-Zdrój, Cieszyn",
   description:
-    "Pomocny Tomek: rąbanie i łupanie drewna na opał, rozdrabnianie gałęzi rębakiem, oczyszczanie działek i terenu, glebogryzarka, frezowanie pni, wiercenie w ziemi, przycinka drzew. Jastrzębie-Zdrój, Cieszyn i okolice. Tel. 790 302 007.",
+    "Pomocny Tomek: rąbanie i łupanie drewna na opał, rozdrabnianie gałęzi rębakiem, frezowanie pni, karczowanie i oczyszczanie terenu, glebogryzarka, wiercenie w ziemi, przycinka drzew. Jastrzębie-Zdrój, Cieszyn i okolice. Tel. 790 302 007.",
 });
 
 export default function Home() {
@@ -57,7 +57,7 @@ export default function Home() {
                 </span>
               </h1>
               <p className="mx-auto mt-6 max-w-xl text-pretty text-base leading-relaxed text-white/75 md:text-lg lg:mx-0 lg:max-w-lg">
-                Rąbanie drewna, rozdrabnianie gałęzi, oczyszczanie działek i inne prace w terenie. Przyjeżdżam, robię co trzeba i uczciwie się rozliczamy. Jak jest robota, z którą samemu ciężko ruszyć, po prostu zadzwoń.
+                Rąbanie drewna, rozdrabnianie gałęzi, frezowanie pni, karczowanie oraz inne prace w terenie. Przyjeżdżam, robię co trzeba i uczciwie się rozliczamy. Jak jest robota, z którą samemu ciężko ruszyć, po prostu zadzwoń.
               </p>
               <div className="mt-9 flex justify-center lg:justify-start">
                 <CTAButton large />
